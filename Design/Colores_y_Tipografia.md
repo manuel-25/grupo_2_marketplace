@@ -8,7 +8,7 @@ Colores para el sitio:
 
 Tipografias:
 
-DM Serif Text
-Josefin Sans
-Oswald
-Mulish Sans Serif
+DM Serif Text, 
+Josefin Sans, 
+Oswald, 
+Mulish Sans Serif, 
