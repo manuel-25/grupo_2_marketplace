@@ -31,3 +31,5 @@ Nuestra oferta será de indumentaria de lujo siguiendo las tendencias en el mund
 Integrantes del grupo:
 
 Ignacio Montaldi, 23 años. Vivo actualmente en la provincia de Salta, en Argentina.
+
+Nicolas Alonso, 24 años. Vivo en Buenos Aires, soy estudiante de Licensiatura en Sistemas de Informacion en la UNLu.
