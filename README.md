@@ -27,3 +27,7 @@ Nuestra audiencia serán los jovenes y adolescentes.
 ¿Cómo ajustaremos nuestra oferta a ese público?
 
 Nuestra oferta será de indumentaria de lujo siguiendo las tendencias en el mundo de la moda de los jovenes y adolescentes.
+
+Integrantes del grupo:
+
+Ignacio Montaldi, 23 años. Vivo actualmente en la provincia de Salta, en Argentina.
