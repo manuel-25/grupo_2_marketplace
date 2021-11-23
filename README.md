@@ -14,3 +14,16 @@ promociones/varios
 
 https://co.tommy.com/brand-tommy-jeans
 Colores
+
+
+¿Qué productos o servicios brindará nuestro sitio?
+
+Nuestro sitio ofrecera indumentaria(remeras, pantalones, accesorios y zapatillas).
+
+¿Quién será nuestra audiencia objetivo? 
+
+Nuestra audiencia serán los jovenes y adolescentes.
+
+¿Cómo ajustaremos nuestra oferta a ese público?
+
+Nuestra oferta será de indumentaria de lujo siguiendo las tendencias en el mundo de la moda de los jovenes y adolescentes.
