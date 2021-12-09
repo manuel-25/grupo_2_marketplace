@@ -1,0 +1,26 @@
+{
+    "name": "grupo_2_lexaeus",
+    "version": "1.0.0",
+    "description": "Grupo - 2 Lexaeus",
+    "main": "app.js",
+    "scripts": {
+        "test": "nodemon src/app.js -e js,mjs,json,html,css"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/manuel-25/grupo_2_Lexaeus.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/manuel-25/grupo_2_Lexaeus/issues"
+    },
+    "homepage": "https://github.com/manuel-25/grupo_2_Lexaeus#readme",
+    "dependencies": {
+        "express": "^4.17.1"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.15"
+    }
+}
