@@ -6,11 +6,11 @@ app.set("port", 3000);
 
 app.listen(app.get("port"), () => console.log("Servidor Corriendo"));
 
-app.get('/', (req, res) => { res.sendFile(path.join(__dirname, './views', 'home.html')) });
+app.get('/', (req, res) => { res.sendFile(path.join(__dirname, './views', 'index.html')) });
 app.get('/homesecundario', (req, res) => { res.sendFile(path.join(__dirname, './views', 'homesecundario.html')) });
-app.get('/carro', (req, res) => { res.sendFile(path.join(__dirname, './views', 'carro.html')) });
+app.get('/productCart', (req, res) => { res.sendFile(path.join(__dirname, './views', 'productCart.html')) });
 app.get('/login', (req, res) => { res.sendFile(path.join(__dirname, './views', 'login.html')) });
-app.get('/registrer', (req, res) => { res.sendFile(path.join(__dirname, './views', 'registrer.html')) });
-app.get('/producto', (req, res) => { res.sendFile(path.join(__dirname, './views', 'producto.html')) });
+app.get('/register', (req, res) => { res.sendFile(path.join(__dirname, './views', 'register.html')) });
+app.get('/productDetail', (req, res) => { res.sendFile(path.join(__dirname, './views', 'productDetail.html')) });
 
 app.use(express.static('./public'));
