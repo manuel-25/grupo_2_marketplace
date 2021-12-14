@@ -6,7 +6,7 @@
     box-sizing: border-box;
 }
 
-@media (min-width: 320px) and (max-width: 1023px) {
+@media (max-width: 1023px) {
     /*Mobile y Tablet*/
     footer {
         background-color: #E63946;
@@ -276,9 +276,9 @@
         </section>
         <section class="parteder">
             <article class="newsletter">
-                <p class="tit">PODES SUSCRIBIRTE A NUESTRO NEWSLETTER</p>
+                <p class="tit">SUSCRIBITE A NUESTRO NEWSLETTER</p>
                 <p class="parrafo">No te pierdas de toda la informacion de la temporada, nuevas prendas y tendencias en Lexeaus</p>
-                <input type="text" name="newsletter">
+                <input type="text" name="newsletter" placeholder="Email">
                 <button type="button">Enviar</button>
             </article>
             <article>
