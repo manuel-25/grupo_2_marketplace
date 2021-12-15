@@ -67,11 +67,21 @@ main{
 .login-button{
     background-color: #E63946;
     color: #FAF6ED;
+    transition: all .2s ease;
+}
+
+.login-button:hover{
+    background-color: #ee1023;
 }
 
 .register-button{
     background-color: #1D3557;
     color: #FAF6ED;
+    transition: all .2s ease;
+}
+
+.register-button:hover{
+    background-color: #0e4694;
 }
 
 .dn{

@@ -42,7 +42,7 @@
     outline: none;
     width: 100%;
     padding: 0 0 0 15px;
-    background-color: #FAF6ED;
+    background-color: #fff;
 }
 
 .form-button{
@@ -53,7 +53,7 @@
     align-content: center;
     border: none;
     outline: none;
-    background-color: #FAF6ED;
+    background-color: #fff;
     color: #457B9D;
 }
 
@@ -64,10 +64,14 @@
 
 .main-header-top-bar h1 a{
     font-family: 'Oswald', sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: center;
     color: #FAF6ED;
-    margin: 0 20px 0px;
+    transition: all 1.5s ease;
+}
+
+.main-header-top-bar h1 a:hover{
+    color: #E63946;
 }
 
 .main-header-top-bar h1 .fa-fire{
@@ -90,6 +94,11 @@
     font-size: 19px;
     text-decoration: none;
     margin: 0 12px 0;
+    transition: all 1.5s ease;
+}
+
+.main-header-right-bar a:hover{
+    color: #E63946;
 }
 
 
@@ -113,6 +122,11 @@
     color: #FAF6ED;
     font-size: 12px;
     margin: 0 2rem 0;
+    transition: all 1.5s ease;
+}
+
+.main-navbar a:hover{
+    color: #E63946;
 }
 
 .main-navbar .list{
@@ -145,6 +159,10 @@
 @media (min-width: 769px){
     .burger{
         display: none;
+    }
+
+    .main-header-top-bar h1 a{
+        font-size: 2rem;
     }
 
     .search{
