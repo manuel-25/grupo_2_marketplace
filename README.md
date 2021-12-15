@@ -1,5 +1,7 @@
 Grupo - 2 Lexaeus
 
+Trello: https://trello.com/b/ib7pTI27/sprint-2
+
 https://www.gucci.com/us/en/?utm_medium=geolocation&utm_source=gucci-WW&utm_campaign=page
 Elegimos como referencia esta marca que se enfoca en la ropa de lujo marcando tendencias en la indumentaria. 
 
