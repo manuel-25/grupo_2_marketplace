@@ -129,7 +129,7 @@
         color: #837f80;
         border-radius: 7px;
         border: 1px solid white;
-        width: 70%;
+        width: 90%;
         height: 5vh;
     }
 }
@@ -202,6 +202,14 @@
         margin-bottom: 3vh;
         width: 70%;
     }
+    .newsletter form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
     .newsletter button {
         background-color: #1D3557;
         border-radius: 5px;
@@ -212,13 +220,14 @@
         font-size: 15px;
         padding: 5px 15px;
         font-family: 'Mulish', sans-serif;
+        width: 40%;
     }
     .newsletter input {
         background-color: white;
         color: #837f80;
         border-radius: 7px;
         border: 1px solid white;
-        width: 70%;
+        width: 75%;
         height: 5vh;
     }
     .copyright {
@@ -230,7 +239,7 @@
 }
 
 
-/*                                      HTML DEL FOOTER
+/*                                      HTML DEL FOOTER - ACTUALIZADO
     <footer>
         <section class="parteizq">
             <section class="columnas">
@@ -249,7 +258,7 @@
                     <p class="titulos">ACERCA DE</p>
                     <i class="fas fa-chevron-right flecha"></i>
                     <ul>
-                        <a href="#">Lexeaus</a>
+                        <a href="#">Lexaeus</a>
                         <a href="#">Terminos y Condiciones</a>
                         <a href="#">Privacidad</a>
                         <a href="#">Legal</a>
@@ -277,14 +286,15 @@
         <section class="parteder">
             <article class="newsletter">
                 <p class="tit">SUSCRIBITE A NUESTRO NEWSLETTER</p>
-                <p class="parrafo">No te pierdas de toda la informacion de la temporada, nuevas prendas y tendencias en Lexeaus</p>
-                <input type="text" name="newsletter" placeholder="Email">
-                <button type="button">Enviar</button>
+                <p class="parrafo">No te pierdas de toda la informacion de la temporada, nuevas prendas y tendencias en Lexaeus</p>
+                <form>
+                    <input type="text" name="newsletter" placeholder="Email">
+                    <button type="button">Enviar</button>
+                </form>
             </article>
             <article>
-                <p class="copyright"><i class="far fa-copyright"></i> 2021 Lexaus | Todos los derechos reservados</p>
+                <p class="copyright"><i class="far fa-copyright"></i> 2021 Lexaeus | Todos los derechos reservados</p>
             </article>
         </section>
     </footer>
-
 */

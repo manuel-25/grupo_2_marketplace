@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Hoja de estilos Carrito -->
+    <link rel="stylesheet" href="/css/carro.css">
+    <!-- Hoja de estilos Header-->
+    <link rel="stylesheet" href="/css/header.css">
+    <!-- Hoja de estilos Footer-->
+    <link rel="stylesheet" href="/css/footer.css">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Tipografias -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Josefin+Sans:wght@100&family=Mulish:wght@300&family=Oswald&display=swap" rel="stylesheet">
+    <title>Carrito || Lexaeus</title>
+</head>
+<body>
+    <header class="main-header">
+        <section class="main-header-top-bar">
+            <form class="form-header" action="" method="post">
+                <fieldset class="form-container">
+                    <input class="form-input" type="text" placeholder="Buscar productos, marcas">
+                    <button class="form-button"><i class="fas fa-search"></i></button>
+                </fieldset>
+            </form>
+            <a class="burger" href="#"><i class="fas fa-bars"></i></a>
+            <h1 href="/">
+                <i class="fas fa-fire"></i>
+                Lexaeus
+            </h1>
+            <section class="main-header-right-bar">
+                <a class="iniciar-sesion" href="/login">Iniciar Sesión</a>
+                <a class="search"><i class="fas fa-search"></i></a>
+                <a class="shoping-cart" href="/productCart"><i class="fas fa-shopping-cart"></i></a>
+            </section>
+        </section>
+        <section class="main-header-bottom-bar">
+            <nav class="main-navbar">
+                <ul class="list">
+                    <a href="#">Hombre</a>
+                    <a href="#">Mujer</a>
+                    <a href="#">Accesorios</a>
+                    <a href="#">Calzado</a>
+                    <a href="#">Ofertas</a>
+                    <a href="#">Ayuda</a>
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <main>
+        <ul class="principal">
+            <ul class="producto">
+                <li><img src="/img/remera.jpg" alt=""></li>
+                <li><ul class="detalles">
+                    <li>Producto: Remera</li>
+                    <li>Cantidad: 1</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    <li>Precio: $99999</li>
+                    <li><button>Editar</button><button>Quitar</button></li>
+                </ul></li>
+            </ul>
+
+            <ul class="producto">
+                <li><img src="/img/pantalon.jpg" alt=""></li>
+                <li><ul class="detalles">
+                    <li>Producto: Pantalón</li>
+                    <li>Cantidad: 1</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    <li>Precio: $99999</li>
+                    <li><button>Editar</button><button>Quitar</button></li>
+                </ul></li>
+            </ul>
+
+            <ul class="producto">
+                <li><img src="/img/zapatillas.jpg" alt=""></li>
+                <li><ul class="detalles">
+                    <li>Producto: Zapatilla</li>
+                    <li>Cantidad: 1</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</li>
+                    <li>Precio: $99999</li>
+                    <li><button>Editar</button><button>Quitar</button></li>
+                </ul></li>
+            </ul>
+        </ul>
+        <section class="subtotal">
+        <ul> 
+            <li>Subtotal: $99999</li>
+            <li><form action="" method="post">
+                <label for="envio">Envio:</label>
+                <select name="envio" id="envio">
+                <option value="buenos-aires">Buenos Aires</option>
+                <option value="cordoba">Cordoba</option>
+                <option value="santa-fe">Santa Fe</option>
+                <option value="corrientes">Corrientes</option>
+                <option value="entre-rios">Entre Rios</option>
+                <option value="la-pampa">La Pampa</option>
+            </select>
+            </form></li>
+            <li>Impuestos aplicados: $$$$$</li>
+            <li>Subtotal: $99999</li>
+            <li>Costo del envio: $99999</li>
+            <li>Impuestos: $$$$$</li>
+        </ul>
+        <ul class="total">
+            <li>Total estimado: $99999</li>
+            <li><button type="submit" class="pagar">PAGAR</button></li>
+        </ul>
+    </section>
+        <section class="codigo-descuento">
+        <form action="" method="post">
+            <label for="codigo" class="codigo">Canjea tu codigo de descuento o giftcard:</label>
+            <input type="text" name="codigo" id="codigo" placeholder="Código de descuento">
+            <button type="submit" class="canjear">Canjear</button>
+        </form>
+        <br>
+            <a href="#"><img src="/img/anuncio.jpg" alt=""></a>
+        </section>
+    </main>
+    <footer>
+        <section class="parteizq">
+            <section class="columnas">
+                <article>
+                    <p class="titulos">CATEGORIAS</p>
+                    <i class="fas fa-chevron-right flecha"></i>
+                    <ul>
+                        <a href="#">Hombre</a>
+                        <a href="#">Mujer</a>
+                        <a href="#">Accesorios</a>
+                        <a href="#">Zapatillas</a>
+                        <a href="#">Ofertas</a>
+                    </ul>
+                </article>
+                <article>
+                    <p class="titulos">ACERCA DE</p>
+                    <i class="fas fa-chevron-right flecha"></i>
+                    <ul>
+                        <a href="#">Lexeaus</a>
+                        <a href="#">Terminos y Condiciones</a>
+                        <a href="#">Privacidad</a>
+                        <a href="#">Legal</a>
+                    </ul>
+                </article>
+                <article>
+                    <p class="titulos">AYUDA</p>
+                    <i class="fas fa-chevron-right flecha"></i>
+                    <ul>
+                        <a href="#">Contacto</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Mi cuenta</a>
+                        <a href="#">Comprar</a>
+                        <a href="#">Vender</a>
+                    </ul>
+                </article>
+            </section>
+            <section class="seguinos">
+                <p>SEGUINOS</p>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+            </section>
+        </section>
+        <section class="parteder">
+            <article class="newsletter">
+                <p class="tit">SUSCRIBITE A NUESTRO NEWSLETTER</p>
+                <p class="parrafo">No te pierdas de toda la informacion de la temporada, nuevas prendas y tendencias en Lexaeus</p>
+                <input type="text" name="newsletter" placeholder="Email">
+                <button type="button">Enviar</button>
+            </article>
+            <article>
+                <p class="copyright"><i class="far fa-copyright"></i> 2021 Lexaeus | Todos los derechos reservados</p>
+            </article>
+        </section>
+    </footer>
+</body>
+</html>
