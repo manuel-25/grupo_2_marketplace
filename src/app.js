@@ -7,7 +7,7 @@ app.set("port", 3000);
 app.listen(app.get("port"), () => console.log("Servidor Corriendo"));
 
 app.get('/', (req, res) => { res.sendFile(path.join(__dirname, './views', 'index.html')) });
-app.get('/homesecundario', (req, res) => { res.sendFile(path.join(__dirname, './views', 'homesecundario.html')) });
+app.get('/homesecundario', (req, res) => { res.sendFile(path.join(__dirname, './views', 'home_secundario.html')) });
 app.get('/productCart', (req, res) => { res.sendFile(path.join(__dirname, './views', 'productCart.html')) });
 app.get('/login', (req, res) => { res.sendFile(path.join(__dirname, './views', 'login.html')) });
 app.get('/register', (req, res) => { res.sendFile(path.join(__dirname, './views', 'register.html')) });
