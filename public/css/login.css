@@ -92,6 +92,16 @@ main{
    text-align: center; 
 }
 
+a{
+    outline: none;
+    text-decoration: none;
+}
+
+
+.a-login{
+    color: #FAF6ED;
+}
+
 @media (max-width: 768) {
 
 }
