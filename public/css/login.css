@@ -102,6 +102,32 @@ a{
     color: #FAF6ED;
 }
 
-@media (max-width: 768) {
-
+.i-remember{
+   position: relative;
+   left: -34px;
+   top: -10px
 }
+
+.l-remember{
+    position: relative;
+    left: -103px;
+    top: -13px;
+    color: #FAF6ED
+ }
+
+
+@media (min-width: 484px) {
+
+    .i-remember{
+        position: relative;
+        left: -105px;
+        top: -10px
+     }
+    .l-remember{
+        position: relative;
+        left: -242px;
+        top: -14px;
+        color: #FAF6ED
+     }
+
+} 
