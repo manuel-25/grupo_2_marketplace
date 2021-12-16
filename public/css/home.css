@@ -118,6 +118,7 @@
     border-radius: 50px;
     border: 1px solid;
     color: #457B9D;
+    cursor: pointer;
 }
 
 .bottom-text div span:hover{
@@ -128,14 +129,12 @@
 
 .servicios-container{
     width: 100vw;
-    height: 55vh;
+    height: 100%;
 }
 
 .servicios-container article{
     margin-right: auto;
     margin-left: auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
     text-align: center;
     color: #457B9D;
     width: 50%;
