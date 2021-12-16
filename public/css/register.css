@@ -1,8 +1,3 @@
-.iniciar-sesion{
-    display: none;
-}
-
-
 main{
     font-family: 'Mulish', sans-serif;
     background-color: #FAF6ED;
@@ -57,9 +52,8 @@ main{
     outline: none;
 }
 
-
-
 .login-buttons button{
+    font-family: 'Oswald', sans-serif;
     width: 100%;
     border-radius: 6px;
     height: 2rem;
@@ -79,7 +73,7 @@ main{
 
 .register-button{
     background-color: #1D3557;
-    font: #FAF6ED; 
+    color: #FAF6ED; 
     transition: all .2s ease;
 }
 

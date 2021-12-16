@@ -10,6 +10,11 @@
 /* Inicio Edicion Main */
 
 
+main button{
+    font-family: "Oswald";
+    border-radius: 50px;
+}
+
 main{
     text-align: center;
     padding: 10px;
@@ -68,10 +73,12 @@ ul button{
     border: none;
     background-color: #1D3557;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 50px;
     color:#F1FAEE;
-    margin-left: 7px;
+    margin-left: 9px;
     font-size: 15px;
+    min-width: 7vw;
+    letter-spacing: 1px;
 }
 
 
@@ -84,8 +91,8 @@ main .subtotal{
     background-color:#FAF6ED;
     font-weight: bold;
     justify-content: center;
-    width: max-content;
-    font-size: 20px;
+    width: 40vw;
+    font-size: 18px;
 }
 
 main .subtotal li{
@@ -115,10 +122,13 @@ main .total li{
 }
 
 main .total button{
+    width: 15vw;
+    border-radius: 50px;
     justify-content: center;
-    font-size: 18px;
+    font-size: 15px;
     border: none;
     padding: 10px;
+    letter-spacing: 2px;
 }
 
 main .codigo-descuento{
@@ -140,15 +150,19 @@ main .codigo-descuento{
 main .codigo {
     margin-bottom: 5px;
     font-weight: bold;
+    font-size: 18px;
 }
 
 
 main .codigo-descuento .canjear{
+    font-size: 15px;
+    letter-spacing: 1px;
+    min-width: 7vw;
     border: none;
     margin-top: 10px;
     background-color: #1D3557;
-    padding: 8px;
-    border-radius: 10px;
+    padding: 7px;
+    border-radius: 50px;
     color: #F1FAEE;
 }
 
@@ -165,7 +179,7 @@ main .codigo-descuento img{
     margin: auto;
     height: 30vh;
     border: #1D3557 1px solid;
-    min-width: 80vw;
+    width: 60vw;
     margin-top: 20px;
 }
 
@@ -207,10 +221,10 @@ main .codigo-descuento img{
         position: absolute;
         font-size: 18px;
         margin: auto;
-        width: max-content;
+        width: 40vw;
         display: block;
         right: 25px;
-        top:100px;
+        top: 10px;
     }
 
     main .total{
@@ -277,11 +291,11 @@ main .codigo-descuento img{
     main .subtotal{
         padding: 10px;
         position: absolute;
-        font-size: 20px;
+        font-size: 22px;
         margin: auto;
         margin-top: 30px;
         margin-right: 30px ;
-        width: max-content;
+        width: 40vw;
         display: block;
         right: 30px;
         top:100px;
