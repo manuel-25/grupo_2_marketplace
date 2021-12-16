@@ -66,6 +66,7 @@
         width: 20%;
     }
     .boton {
+        border-radius: 50px;
         background-color: #1D3557;
         color: white;
         font-family: 'Oswald', sans-serif;
@@ -77,6 +78,11 @@
         width: 90%;
         margin-left: auto;
         margin-right: auto;
+    }
+    .boton a {
+        list-style: none;
+        text-decoration: none;
+        color: white;
     }
     h3 {
         font-family: 'Mulish', sans-serif;
@@ -194,6 +200,7 @@
         width: 20%;
     }
     .boton {
+        border-radius: 50px;
         background-color: #1D3557;
         color: white;
         font-family: 'Oswald', sans-serif;
@@ -202,6 +209,11 @@
         padding: 1vh;
         margin-top: 50px;
         width: 70%;
+    }
+    .boton a {
+        list-style: none;
+        text-decoration: none;
+        color: white;
     }
     h3 {
         font-family: 'Mulish', sans-serif;
@@ -322,10 +334,16 @@
         color: white;
         font-family: 'Oswald', sans-serif;
         border: 1px solid #1D3557;
+        border-radius: 50px;
         font-size: 25px;
         padding: 1vh;
         margin-top: 50px;
         width: 40%;
+    }
+    .boton a {
+        list-style: none;
+        text-decoration: none;
+        color: white;
     }
     h3 {
         font-family: 'Mulish', sans-serif;
