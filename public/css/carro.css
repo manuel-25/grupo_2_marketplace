@@ -22,15 +22,15 @@ main{
     text-align: center;
     display: inline-flex;
     flex-direction: column;
-    width: fit-content;
+    width: max-content;
 }
 
 ul .producto{
+    width: fit-content;
     display: inline-flex;
     background-color:#1D3557;
     border-radius:10px;
     padding: 5px;
-    width: fit-content;
     margin-bottom: 15px;
     list-style: none;
     border: black solid 1px;
@@ -38,13 +38,15 @@ ul .producto{
 
 ul img{
     width: 100px;
-    height: 100px;
+    height: 110px;
     border: solid 1px #1D3557;
-    margin-top: 30px;
+    margin-top: 20px;
+    
 }
 
 
 ul .detalles{
+    width: 50vw;
     text-align: left;
     list-style: none;
     background-color: #FAF6ED;
@@ -63,6 +65,7 @@ ul .detalles li{
 
 
 ul button{
+    border: none;
     background-color: #1D3557;
     padding: 5px;
     border-radius: 10px;
@@ -104,6 +107,7 @@ main .total{
 
 main .total li{
     padding: 10px;
+    font-size: 16px;
 }
 
 main .total button{
@@ -183,7 +187,7 @@ main .codigo-descuento img{
 
     }
     main .detalles{
-        max-width: 50vw;
+        max-width: 40vw;
         flex-direction: row;
         padding: 5px;
         text-align: left;
@@ -192,13 +196,14 @@ main .codigo-descuento img{
     
     main .subtotal{
         position: absolute;
-        font-size: 15px;
+        font-size: 18px;
         margin: auto;
         margin-top: 30px;
+        margin-right: 20px;
         width: max-content;
         display: block;
         right: 10px;
-        top:10px;
+        top:100px;
     }
 
     main .total{
@@ -240,7 +245,7 @@ main .codigo-descuento img{
 
 
     main .detalles{
-        width: 50vw;
+        max-width: 40vw;
         flex-direction: row;
         padding: 5px;
         text-align: left;
@@ -271,7 +276,7 @@ main .codigo-descuento img{
         width: max-content;
         display: block;
         right: 10px;
-        top:10px;
+        top:100px;
     }
 
     main .total{
