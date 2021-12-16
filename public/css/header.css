@@ -22,6 +22,7 @@
 }
 
 .logo-header{
+    align-self: center;
     text-decoration: none;
     color: #FAF6ED;
 }
@@ -43,6 +44,7 @@
     width: 100%;
     padding: 0 0 0 15px;
     background-color: #fff;
+    transition: width, font-size 1s ease;
 }
 
 .form-button{
@@ -67,11 +69,11 @@
     font-size: 1.5rem;
     text-align: center;
     color: #FAF6ED;
-    transition: all 1.5s ease;
 }
 
 .main-header-top-bar h1 a:hover{
     color: #E63946;
+    transition: all 1.5s ease;
 }
 
 .main-header-top-bar h1 .fa-fire{
@@ -81,6 +83,11 @@
     font-size: 16px;
     color: #E63946;
 }
+
+.main-header-top-bar h1 .fa-fire:hover{
+    animation: fueguito 3s infinite;
+}
+
 
 .main-header-right-bar{
     width: 70px;
@@ -94,11 +101,12 @@
     font-size: 19px;
     text-decoration: none;
     margin: 0 12px 0;
-    transition: all 1.5s ease;
+    transition: font-size, margin 1s ease;
 }
 
 .main-header-right-bar a:hover{
     color: #E63946;
+    transition: all 1.5s ease;
 }
 
 
@@ -122,11 +130,11 @@
     color: #FAF6ED;
     font-size: 12px;
     margin: 0 2rem 0;
-    transition: all 1.5s ease;
 }
 
 .main-navbar a:hover{
     color: #E63946;
+    transition: all 1.5s ease;
 }
 
 .main-navbar .list{
@@ -170,7 +178,13 @@
     }
 
     .main-header-right-bar{
-        width: 20%;
+        width: 30%;
     }
 
+}
+
+@keyframes fueguito{
+    50%{
+        transform: translateY(-5px) scale(1.15);
+    }
 }
