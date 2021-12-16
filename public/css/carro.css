@@ -76,6 +76,7 @@ ul button{
 
 
 main .subtotal{
+    padding: 10px;
     text-align: center;
     display: inline-flex;
     flex-direction: column;
@@ -84,6 +85,7 @@ main .subtotal{
     font-weight: bold;
     justify-content: center;
     width: max-content;
+    font-size: 20px;
 }
 
 main .subtotal li{
@@ -98,9 +100,11 @@ main .subtotal select{
 }
 
 main .total{
+    text-decoration: underline;
     border-top: #1D3557 2px solid;
     text-align: center;
     padding-top: 10px;
+    font-size: 20px;
     list-style: none;
     font-weight: bold;
 }
@@ -199,14 +203,13 @@ main .codigo-descuento img{
     }
     
     main .subtotal{
+        padding: 10px;
         position: absolute;
         font-size: 18px;
         margin: auto;
-        margin-top: 30px;
-        margin-right: 20px;
         width: max-content;
         display: block;
-        right: 10px;
+        right: 25px;
         top:100px;
     }
 
@@ -272,14 +275,15 @@ main .codigo-descuento img{
 
 
     main .subtotal{
+        padding: 10px;
         position: absolute;
-        font-size: 18px;
+        font-size: 20px;
         margin: auto;
         margin-top: 30px;
         margin-right: 30px ;
         width: max-content;
         display: block;
-        right: 10px;
+        right: 30px;
         top:100px;
     }
 
