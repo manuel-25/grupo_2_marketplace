@@ -127,7 +127,8 @@ main .codigo-descuento{
     padding-bottom: 10px;
     padding: 10px;
     background-color:#FAF6ED;
-    flex-direction: column;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin: auto;
     margin-top: 30px;
 }
@@ -157,8 +158,11 @@ main .codigo-descuento input{
 }
 
 main .codigo-descuento img{
+    margin: auto;
+    height: 30vh;
     border: #1D3557 1px solid;
-    width: 90vw;
+    min-width: 80vw;
+    margin-top: 20px;
 }
 
 /* FIn edicion Main*/
