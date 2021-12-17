@@ -27,7 +27,7 @@
         margin-right: auto;
         margin-top: 1vh;
         margin-bottom: 1vh;
-        border: 2px solid black;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .titulo {
         font-family: 'Oswald', sans-serif;
@@ -60,12 +60,14 @@
         background-color: #457B9D;
         color: white;
         width: 40%;
+        border-radius: 50px;
     }
     .txtdetallecompra {
         margin-right: 3vh;
         width: 20%;
     }
     .boton {
+        border-radius: 50px;
         background-color: #1D3557;
         color: white;
         font-family: 'Oswald', sans-serif;
@@ -77,6 +79,11 @@
         width: 90%;
         margin-left: auto;
         margin-right: auto;
+    }
+    .boton a {
+        list-style: none;
+        text-decoration: none;
+        color: white;
     }
     h3 {
         font-family: 'Mulish', sans-serif;
@@ -111,6 +118,7 @@
         padding-top: 2vh;
         margin-left: 1vw;
         margin-right: 1vw;
+        border-radius: 6px;
     }
     .tepuedeinteresar {
         flex-direction: row;
@@ -124,8 +132,8 @@
         height: auto;
         max-width: 250px;
         max-height: 250px;
-        border: 1px solid black;
         margin-bottom: 3vh;
+        border-radius: 6px;
     }
     .arttxt {
         font-family: 'Mulish', sans-serif;
@@ -151,7 +159,7 @@
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        border: 2px solid black;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .detallescompra {
         width: 50%;
@@ -188,12 +196,14 @@
         background-color: #457B9D;
         color: white;
         width: 200px;
+        border-radius: 50px;
     }
     .txtdetallecompra {
         margin-right: 3vh;
         width: 20%;
     }
     .boton {
+        border-radius: 50px;
         background-color: #1D3557;
         color: white;
         font-family: 'Oswald', sans-serif;
@@ -202,6 +212,11 @@
         padding: 1vh;
         margin-top: 50px;
         width: 70%;
+    }
+    .boton a {
+        list-style: none;
+        text-decoration: none;
+        color: white;
     }
     h3 {
         font-family: 'Mulish', sans-serif;
@@ -236,6 +251,7 @@
         padding-top: 2vh;
         margin-left: 1vw;
         margin-right: 1vw;
+        border-radius: 6px;
     }
     .tepuedeinteresar {
         justify-content: space-around;
@@ -248,8 +264,8 @@
         height: auto;
         max-width: 250px;
         max-height: 250px;
-        border: 1px solid black;
         margin-bottom: 3vh;
+        border-radius: 6px;
     }
     .arttxt {
         font-family: 'Mulish', sans-serif;
@@ -275,7 +291,7 @@
         width: 80%;
         margin-left: auto;
         margin-right: auto;
-        border: 2px solid black;
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .detallescompra {
         width: 50%;
@@ -312,6 +328,7 @@
         background-color: #457B9D;
         color: white;
         width: 200px;
+        border-radius: 50px;
     }
     .txtdetallecompra {
         margin-right: 3vh;
@@ -322,10 +339,16 @@
         color: white;
         font-family: 'Oswald', sans-serif;
         border: 1px solid #1D3557;
+        border-radius: 50px;
         font-size: 25px;
         padding: 1vh;
         margin-top: 50px;
         width: 40%;
+    }
+    .boton a {
+        list-style: none;
+        text-decoration: none;
+        color: white;
     }
     h3 {
         font-family: 'Mulish', sans-serif;
@@ -360,6 +383,7 @@
         padding-top: 2vh;
         margin-left: 1vw;
         margin-right: 1vw;
+        border-radius: 6px;
     }
     .tepuedeinteresar {
         justify-content: space-around;
@@ -372,8 +396,8 @@
         height: auto;
         max-width: 250px;
         max-height: 250px;
-        border: 1px solid black;
         margin-bottom: 3vh;
+        border-radius: 6px;
     }
     .arttxt {
         font-family: 'Mulish', sans-serif;

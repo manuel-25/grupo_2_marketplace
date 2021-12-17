@@ -57,8 +57,9 @@ main{
 }
 
 .login-buttons button{
+    font-family: 'Oswald', sans-serif;
     width: 100%;
-    border-radius: 6px;
+    border-radius: 50px;
     height: 2rem;
     border:none;
     outline: none;
@@ -67,7 +68,7 @@ main{
 .login-button{
     background-color: #E63946;
     color: #FAF6ED;
-    transition: all .2s ease;
+    transition: all .4s ease;
 }
 
 .login-button:hover{
@@ -77,7 +78,7 @@ main{
 .register-button{
     background-color: #1D3557;
     color: #FAF6ED;
-    transition: all .2s ease;
+    transition: all .4s ease;
 }
 
 .register-button:hover{
@@ -92,6 +93,42 @@ main{
    text-align: center; 
 }
 
-@media (max-width: 768) {
-
+a{
+    outline: none;
+    text-decoration: none;
 }
+
+
+.a-login{
+    color: #FAF6ED;
+}
+
+.i-remember{
+   position: relative;
+   left: -34px;
+   top: -10px
+}
+
+.l-remember{
+    position: relative;
+    left: -103px;
+    top: -13px;
+    color: #FAF6ED
+ }
+
+
+@media (min-width: 484px) {
+
+    .i-remember{
+        position: relative;
+        left: -105px;
+        top: -10px
+     }
+    .l-remember{
+        position: relative;
+        left: -242px;
+        top: -14px;
+        color: #FAF6ED
+     }
+
+} 
