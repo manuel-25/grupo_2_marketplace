@@ -38,6 +38,7 @@
         background-color: #FAF6ED;
         width: 90%;
     }
+
     main h1 {
         text-align: center;
         margin-top: 6vh;
@@ -149,6 +150,7 @@
         /*padding: 15px;*/
         width: 32%;
     }
+
     .descr {
         font-size: 20px;
         color: black;
