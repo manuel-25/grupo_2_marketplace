@@ -38,6 +38,7 @@ ul .producto{
     margin-bottom: 15px;
     list-style: none;
     border: black solid 1px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 ul img{
@@ -84,19 +85,25 @@ ul button{
     letter-spacing: 1px;
 }
 
+ul button:hover{
+    transition: all .4s ease;
+    background-color: #0e4694;
+}
+
 
 main .subtotal{
     padding: 10px;
     text-align: center;
     display: inline-flex;
     flex-direction: column;
-    border: #1D3557 3px solid;
+    border: #1D3557 7px solid;
     background-color:#FAF6ED;
     font-weight: bold;
     justify-content: center;
     width: fit-content;
     font-size: 18px;
     border-radius: 6px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 main .subtotal li{
@@ -138,13 +145,14 @@ main .total button{
     letter-spacing: 2px;
 }
 
+
 main .codigo-descuento{
     font-weight: bold;
     justify-content: center;
     text-align: center;
     width: 90%;
     display: flex;
-    border: solid 1px #457B9D;
+    border: solid 7px #1D3557;
     border-radius: 10px;
     padding-bottom: 10px;
     padding: 10px;
@@ -153,6 +161,8 @@ main .codigo-descuento{
     flex-wrap: wrap;
     margin: auto;
     margin-top: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
 }
 
 main #codigo {
@@ -176,6 +186,11 @@ main .codigo-descuento .canjear{
     padding-top: 2px;
     border-radius: 50px;
     color: #F1FAEE;
+}
+
+main .codigo-descuento .canjear:hover{
+    transition: all .4s ease;
+    background-color: #0e4694;
 }
 
 main .codigo-descuento input{

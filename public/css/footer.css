@@ -72,6 +72,12 @@
         margin: 2vh;
         color: #1D3557;
     }
+
+    .seguinos i:hover{
+        transition: all .4s ease;
+        color: #0e4694;
+    }
+
     .parrafo {
         display: none;
     }
@@ -115,7 +121,7 @@
     }
     .newsletter button {
         background-color: #1D3557;
-        border-radius: 5px;
+        border-radius: 50px;
         border: 1px solid #1D3557;
         color: white;
         margin-top: 3vh;
@@ -124,6 +130,12 @@
         padding: 5px 15px;
         font-family: 'Mulish', sans-serif;
     }
+
+    .newsletter button:hover{
+        transition: all .4s ease;
+        background-color: #0e4694;
+    }
+
     .newsletter input {
         background-color: white;
         color: #837f80;
@@ -180,6 +192,12 @@
         margin: 2vh;
         color: #1D3557;
     }
+
+    .seguinos i:hover{
+        transition: all .4s ease;
+        color: #0e4694;
+    }
+
     .columnas article ul a {
         margin-bottom: 2vh;
         text-align: center;
@@ -223,6 +241,12 @@
         font-family: 'Mulish', sans-serif;
         width: 40%;
     }
+
+    .newsletter button:hover{
+        transition: all .4s ease;
+        background-color: #0e4694;
+    }
+
     .newsletter input {
         background-color: white;
         color: #837f80;
