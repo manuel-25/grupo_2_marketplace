@@ -66,6 +66,11 @@ ul .detalles li{
     padding-bottom: 7px;
 }  
 
+ul .detalles select{
+    border: solid 1px #1D3557;
+    padding: 1px;
+    border-radius: 50px;
+}
 
 ul button{
     border: none;
@@ -100,9 +105,11 @@ main .subtotal li{
     margin-bottom: 10px;
 }
 
-main .subtotal #select{
+main .subtotal select{
+    border-radius: 50px;
     border: #1D3557 1px solid;
     padding: 1px;
+    
 }
 
 main .total{
