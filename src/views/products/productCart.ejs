@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../partials/head.ejs") %>
+    
+    <!-- Hoja de estilos Carrito -->
+    <link rel="stylesheet" href="/css/carro.css">
+
+</head>
+<body>
+    <%- include("../partials/header.ejs") %> 
+    <main>
+        <ul class="principal">
+            <ul class="producto">
+                <li><a href="/productDetail"><img src="/img/remera.jpg" alt=""></a></li>
+                <li><ul class="detalles">
+                    <li>Producto: Remera</li>
+                    <li><form action="" method="post">
+                        <label for="cantidad">Cantidad:</label>
+                        <select name="cantidad" id="cantidad">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </form></li>
+                    <li>Descripción: Remera blanca talle M</li>
+                    <li>Precio: $3999</li>
+                    <li><button>Editar</button><button class="quitar">Quitar</button></li>
+                </ul></li>
+            </ul>
+
+            <ul class="producto">
+                <li><a href="/productDetail"><img src="/img/pantalon.jpg" alt=""></a></li>
+                <li><ul class="detalles">
+                    <li>Producto: Pantalón</li>
+                    <li><form action="" method="post">
+                        <label for="cantidad">Cantidad:</label>
+                        <select name="cantidad" id="cantidad">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </form></li>
+                    <li>Descripción: Pantalón formal color negro. Largo 32.</li>
+                    <li>Precio: $6999</li>
+                    <li><button>Editar</button><button class="quitar">Quitar</button></li>
+                </ul></li>
+            </ul>
+
+            <ul class="producto">
+                <li><a href="/productDetail"><img src="/img/zapatillas.jpg" alt=""></a></li>
+                <li><ul class="detalles">
+                    <li>Producto: Zapatilla</li>
+                    <li><form action="" method="post">
+                        <label for="cantidad">Cantidad:</label>
+                        <select name="cantidad" id="cantidad">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </form></li>
+                    <li>Descripción: Zapatillas grises talla 39.</li>
+                    <li>Precio: $4999</li>
+                    <li><button>Editar</button><button class="quitar">Quitar</button></li>
+                </ul></li>
+            </ul>
+        </ul>
+        <section class="subtotal">
+        <ul> 
+            <li>Subtotal: $15997</li>
+            <li><form action="" method="post">
+                <label for="envio">Envio:</label>
+                <select name="envio" id="envio">
+                <option value="buenos-aires">Buenos Aires</option>
+                <option value="cordoba">Cordoba</option>
+                <option value="santa-fe">Santa Fe</option>
+                <option value="corrientes">Corrientes</option>
+                <option value="entre-rios">Entre Rios</option>
+                <option value="la-pampa">La Pampa</option>
+            </select>
+            </form></li>
+            <li>Impuestos aplicados: $3199.4</li>
+            <li>Costo del envio: $420</li>
+        </ul>
+        <ul class="total">
+            <li>Total estimado: $19616,4</li>
+            <li><button type="submit" class="pagar">PAGAR</button></li>
+        </ul>
+    </section>
+        <section class="codigo-descuento">
+        <form action="" method="post">
+            <label for="codigo" class="codigo">Canjea tu codigo de descuento o giftcard:</label>
+            <input type="text" name="codigo" id="codigo" placeholder="Código de descuento">
+            <button type="submit" class="canjear">Canjear</button>
+        </form>
+        <br>
+            <a href="#"><img src="/img/anuncio.jpg" alt=""></a>
+        </section>
+    </main>
+    <%- include("../partials/footer.ejs") %>
+</body>
+</html>

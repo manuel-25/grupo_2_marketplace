@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../partials/head.ejs") %>
+
+    <link href="/css/register.css" rel="stylesheet">
+
+</head>
+<body>
+    <%- include("../partials/header.ejs") %> 
+    <main>
+        <section class="login-container">
+            <form class="login-form" action="/" method="post">
+                <h1>
+                    Registrate
+                </h1>
+                <fieldset>
+                    <legend class="dn">Usuario</legend>
+                    <label class="dn" for="usuario">Nombre de Usuario</label>
+                    <input type="text" name="usuario" id="usuario" placeholder="Nombre de Usuario" required>
+                </fieldset>
+        
+                <fieldset>
+                    <legend class="dn">Email</legend>
+                    <label class="dn" for="clave">Email</label>
+                    <input type="email" name="clave" id="email" placeholder="Direccion de Correo Electronico"required>
+                </fieldset>
+
+                <fieldset>
+                    <legend class="dn">Contraseña</legend>
+                    <label class="dn" for="clave">Contraseña</label>
+                    <input type="password" name="clave" id="clave" placeholder="Contraseña" required>
+                </fieldset>
+        
+                <fieldset>
+                    <legend class="dn">Confirmar Contraseña</legend>
+                    <label class="dn" for="confirmar">Confirmar Contraseña</label>
+                    <input type="password" name="confirmar" id="confirmar" placeholder="Confirmar Contraseña"required>
+                </fieldset>
+        
+                <fieldset class="login-buttons">
+                    <legend class="dn">Botones del Formulario</legend>
+                    <button class="login-button" type="submit">Registrarse</button>
+                    <button class="register-button" type="submit"><a class="a-register" href="/">Volver al inicio</a> </button>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <%- include("../partials/footer.ejs") %>
+</body>
+</html>

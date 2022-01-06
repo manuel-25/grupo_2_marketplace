@@ -42,15 +42,17 @@ ul .producto{
 }
 
 ul img{
-    width: 100px;
+    width: 120px;
+    min-width: 120px;
     height: 100%;
+    min-height: 50%;
     border: solid 1px #1D3557;
     border-radius: 6px;
 }
 
 
 ul .detalles{
-    width: 50vw;
+    width: 35vw;
     text-align: left;
     list-style: none;
     background-color: #FAF6ED;
@@ -83,11 +85,6 @@ ul button{
     font-size: 15px;
     min-width: 7vw;
     letter-spacing: 1px;
-}
-
-ul button:hover{
-    transition: all .4s ease;
-    background-color: #0e4694;
 }
 
 
@@ -188,10 +185,6 @@ main .codigo-descuento .canjear{
     color: #F1FAEE;
 }
 
-main .codigo-descuento .canjear:hover{
-    transition: all .4s ease;
-    background-color: #0e4694;
-}
 
 main .codigo-descuento input{
     border: 1px #457B9D solid;
@@ -353,3 +346,73 @@ main .codigo-descuento img{
     }
 
 }
+
+/* Transiciones */
+
+.producto:hover{
+    transition: all .4s ease;
+    background-color: #457B9D;
+}
+
+.producto button:hover{
+    transition: all .4s ease;
+    background-color: #457B9D;
+}
+
+.producto .quitar:hover{
+    transition: all .4s ease;
+    background-color: #E63946;
+}
+
+.total button:hover{
+    transition: all .4s ease;
+    background-color: #E63946;
+}
+
+.detalles select:hover{
+    transition: all .4s ease;
+    border: 1px solid #457B9D;
+}
+
+.subtotal select :hover{
+    transition: all .4s ease;
+        border: 1px solid #457B9D;
+}
+
+.codigo-descuento input:hover{
+    transition: all .4s ease;
+    border: solid 1px #1D3557;
+}
+
+.codigo-descuento button:hover{
+    transition: all .4s ease;
+    background-color: #457B9D;
+}
+
+.codigo-descuento img:hover{
+    transition: all .4s ease;
+    border: #457B9D 1px solid;
+}
+
+
+/*
+ul button:hover{
+    transition: all .4s ease;
+    background-color: #457B9D;
+}
+
+ul .quitar:hover{
+    transition: all .4s ease;
+    background-color: #E63946;
+}
+
+main .total button:hover{
+    transition: all .4s ease;
+    background-color: #E63946;
+}
+
+main .codigo-descuento .canjear:hover{
+    transition: all .4s ease;
+    background-color: #0e4694;
+}
+*/
