@@ -5,7 +5,7 @@ const controller = {
         res.render(path.resolve(__dirname, "..", "views", "users", "index"))
     },
 
-    homeSecundario: (req, res) =>{
+    home_secundario: (req, res) =>{
         res.render(path.resolve(__dirname, "..", "views", "users", "home_secundario"))
     },
 
