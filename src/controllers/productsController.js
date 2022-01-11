@@ -2,19 +2,19 @@ const path = require('path');
 
 const controller = {
     carrito: (req,res) =>{
-        res.render(path.resolve(__dirname, "..", "views", "products", "productCart"))
+        res.render(path.resolve(__dirname, "..", "views", "products", "cart"))
     },
 
     detalle: (req, res) =>{
-        res.render(path.resolve(__dirname, "..", "views", "products", "productDetail"))
+        res.render(path.resolve(__dirname, "..", "views", "products", "detail"))
     },
 
     crearProducto: (req, res) =>{
-        //Necesito la view del crear
+        res.render(path.resolve(__dirname, "..", "views", "products", "create"))
     },
 
     modificarProducto: (req, res) =>{
-        //Necesito la view del modificar
+        res.render(path.resolve(__dirname, "..", "views", "products", "modify"))
     }
 }
 

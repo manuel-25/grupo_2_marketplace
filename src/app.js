@@ -18,8 +18,8 @@ app.listen(app.get("port"), () => console.log("Servidor Corriendo"));
 
 //Direcciones
 app.use("/", rutaHome);
-app.use("/", rutasUsers)
-app.use("/", rutasProductos)
+app.use("/users", rutasUsers)
+app.use("/products", rutasProductos)
 
 
 app.use(express.static('./public'));
