@@ -15,6 +15,10 @@ const controller = {
 
     modificarProducto: (req, res) =>{
         res.render(path.resolve(__dirname, "..", "views", "products", "modify"))
+    },
+
+    guardarProducto: (req, res) => {
+        res.send(req.body)
     }
 }
 

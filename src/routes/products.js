@@ -10,4 +10,6 @@ router.get("/create", products.crearProducto)
 
 router.get("/modify", products.modificarProducto);
 
+router.post('/save', products.guardarProducto)
+
 module.exports = router;
