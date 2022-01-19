@@ -10,29 +10,29 @@
     />
 
     <link rel="stylesheet" href="/css/productCreate.css">
-
+    <%- include("../partials/head.ejs") %>
     <title>Nuevo Producto</title>
 </head>
 
 <body>
     <main>
-
+        <%- include("../partials/header.ejs") %> 
         <section class="titulo">
             <a href="/">Volver a Lexaeus</a>
             <h1>Nuevo Producto</h1>
         </section>
 
-        <form action="productCreate.ejs" method="post">
+        <form action="/products/save" method="post">
             <section class="superior">
                 <section class="izquierda">
 
                     <h2>Nombre</h2>
 
-                    <input type="text" name="Nombre" class="campo">
+                    <input type="text" name="nombre" class="campo" required>
 
                     <h2>Categoria</h2>
 
-                    <select name="Categoria" class="campo">
+                    <select name="categoria" class="campo" required>
                 
                     <option value="1">Hombre</option>
                     <option value="2">Mujer</option>
@@ -43,7 +43,7 @@
 
                     <h2>Descripción</h2>
 
-                    <input type="text" name="Descripcion" class="descr">
+                    <input type="text" name="descripcion" class="descr">
 
                 </section>
 
@@ -51,11 +51,11 @@
                     <article class="TituloBotonImagen">
                         <h2>Imagen</h2>
                         <div class="file-select" id="src-file1">
-                            <input type="file" name="src-file1" aria-label="Archivo">
+                            <input type="file" name="img" aria-label="Archivo">
                         </div>
                     </article>
 
-                    <img src="" alt="ImagenProducto" class="imagen">
+                    <img src="#" alt="ImagenProducto" class="imagen">
 
                 </section>
 
@@ -63,19 +63,19 @@
                     <section>
                         <h2>Stock</h2>
 
-                        <input type="text" name="Stock">
+                        <input type="text" name="stock" required>
                     </section>
 
                     <section>
                         <h2>Talle</h2>
 
-                        <input type="text" name="Talle">
+                        <input type="text" name="talle" required>
                     </section>
 
                     <section>
                         <h2>Color</h2>
 
-                        <input type="text" name="Color">
+                        <input type="text" name="color" required>
                     </section>
                 </section>
 
@@ -85,16 +85,17 @@
                 <section class="precio">
                     <h2>Precio</h2>
 
-                    <input type="text" name="Precio" class="campo">
+                    <input type="text" name="precio" class="campo" required>
                 </section>
 
                 <section class="botones">
                     <input type="reset" value="Cancelar" class="botonCancelar">
-                    <input type="button" value="Cargar Producto" class="botonConfirmar">
+                    <input type="submit" value="Cargar Producto" class="botonConfirmar">
                 </section>
             </section>
         </form>
     </main>
+    <%- include("../partials/footer.ejs") %> 
 </body>
 
 </html>

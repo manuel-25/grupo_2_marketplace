@@ -18,4 +18,6 @@ router.put("/:id", products.editar)
 
 router.delete("/:id", products.borrar)
 
+router.post('/save', products.guardarProducto)
+
 module.exports = router;

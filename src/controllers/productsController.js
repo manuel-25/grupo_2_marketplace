@@ -21,16 +21,8 @@ const controller = {
         res.render(path.resolve(__dirname, "..", "views", "products", "modify"))
     },
 
-    crear: (req, res) => {
-
-    },
-
-    editar: (req, res) => {
-
-    },
-
-    borrar: (req, res) => {
-
+    guardarProducto: (req, res) => {
+        res.send(req.body)
     }
 }
 
