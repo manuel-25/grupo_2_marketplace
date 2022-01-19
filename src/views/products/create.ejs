@@ -10,13 +10,13 @@
     />
 
     <link rel="stylesheet" href="/css/productCreate.css">
-
+    <%- include("../partials/head.ejs") %>
     <title>Nuevo Producto</title>
 </head>
 
 <body>
     <main>
-
+        <%- include("../partials/header.ejs") %> 
         <section class="titulo">
             <a href="/">Volver a Lexaeus</a>
             <h1>Nuevo Producto</h1>
@@ -95,6 +95,7 @@
             </section>
         </form>
     </main>
+    <%- include("../partials/footer.ejs") %> 
 </body>
 
 </html>

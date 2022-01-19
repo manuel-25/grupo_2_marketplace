@@ -8,15 +8,15 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
-
+    <%- include("../partials/head.ejs") %>
     <link rel="stylesheet" href="/css/productModify.css">
 
     <title>Modificar Producto</title>
 </head>
 
 <body>
+    <%- include("../partials/header.ejs") %> 
     <main>
-
         <section class="titulo">
             <a href="/">Volver a Lexaeus</a>
             <h1>Modificar Producto</h1>
@@ -89,12 +89,13 @@
                 </section>
 
                 <section class="botones">
-                    <input type="button" value="Eliminar Producto" class="botonEliminar">
-                    <input type="button" value="Modificar Producto" class="botonModificar">
+                    <input type="button" value="Eliminar Producto" class="botonCancelar">
+                    <input type="button" value="Modificar Producto" class="botonConfirmar">
                 </section>
             </section>
         </form>
     </main>
+    <%- include("../partials/footer.ejs") %> 
 </body>
 
 </html>
