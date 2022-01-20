@@ -6,7 +6,7 @@ const controller = {
     },
 
     home_secundario: (req, res) =>{
-        res.render(path.resolve(__dirname, "..", "views", "users", "home_secundario"))
+        res.render(path.resolve(__dirname, "..", "views", "products", "home_secundario"))
     },
 }
 
