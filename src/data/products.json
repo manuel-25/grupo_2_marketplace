@@ -1,5 +1,4 @@
-[
-  {
+[{
     "id": 1,
     "nombre": "",
     "categoria": "",
@@ -9,5 +8,4 @@
     "stock": null,
     "talle": "",
     "color": ""
-  }
-]
+}]

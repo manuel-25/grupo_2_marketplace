@@ -2,15 +2,15 @@ const path = require('path')
 const product = require('../models/product')
 
 const controller = {
-    lista: (req, res) => {res.render(path.resolve(__dirname, "..", "views", "products", "home_secundario"))},
+    lista: (req, res) => { res.render(path.resolve(__dirname, "..", "views", "products", "home_secundario"), { productos: product.listar() }) },
 
-    carrito: (req, res) => {res.render(path.resolve(__dirname, "..", "views", "products", "cart"))},
+    carrito: (req, res) => { res.render(path.resolve(__dirname, "..", "views", "products", "cart")) },
 
-    detalle: (req, res) => {res.render(path.resolve(__dirname, "..", "views", "products", "detail"))},
+    detalle: (req, res) => { res.render(path.resolve(__dirname, "..", "views", "products", "detail")) },
 
-    crearProducto: (req, res) => {res.render(path.resolve(__dirname, "..", "views", "products", "create"))},
+    crearProducto: (req, res) => { res.render(path.resolve(__dirname, "..", "views", "products", "create")) },
 
-    modificarProducto: (req, res) => {res.render(path.resolve(__dirname, "..", "views", "products", "modify"))},
+    modificarProducto: (req, res) => { res.render(path.resolve(__dirname, "..", "views", "products", "modify")) },
 
     guardarProducto: (req, res) => {
         req.body.precio = parseFloat(req.body.precio)

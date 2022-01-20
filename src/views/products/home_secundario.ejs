@@ -3,91 +3,49 @@
 
 <head>
     <%- include("../partials/head.ejs") %>
-    
-    <link href="/css/home_sec.css" rel="stylesheet">
+
+        <link href="/css/home_sec.css" rel="stylesheet">
 </head>
 
 <body>
-    <%- include("../partials/header.ejs") %> 
-    <main>
+    <%- include("../partials/header.ejs") %>
+        <main>
 
-        <section>
+            <section>
 
-            <h1>Nombre de la categoria</h1>
+                <% if (productos.length > 0) { %>
 
-            <article>
-                <a class="a-homesecundario" href="/products/detail">
-                    <img src="/img/imagen_1.jpg" alt="Producto1">
-                </a>
-                <div>
-                    <p class="descr"><b>Nombre del producto</b></p>
-                    <p class="precios">$9999.99</p>
-                </div>
+                    <h1>Nombre de la categoria</h1>
 
-            </article>
+                    <% for(let i = 0; i < productos.length; i++) { %>
 
-            <article>
-                <a class="a-homesecundario" href="/products/detail">
-                    <img src="/img/imagen_1.jpg" alt="Producto1">
-                </a>
-                <div>
-                    <p class="descr"><b>Nombre del producto</b></p>
-                    <p class="precios">$9999.99</p>
-                </div>
+                        <article>
 
-            </article>
+                            <a class="a-homesecundario" href="/products/detail/<%= productos[i].id %>">
+                                <img src=<%=productos[i].img %> alt="Producto1">
+                            </a>
+                            <div>
+                                <p class="descr"><b><%= productos[i].nombre %></b></p>
+                                <p class="precios">
+                                    $
+                                    <%= productos[i].precio %>
+                                </p>
+                            </div>
 
-            <article>
-                <a class="a-homesecundario" href="/products/detail">
-                    <img src="/img/imagen_1.jpg" alt="Producto1">
-                </a>
-                <div>
-                    <p class="descr"><b>Nombre del producto</b></p>
-                    <p class="precios">$9999.99</p>
-                </div>
+                        </article>
 
-            </article>
+                        <% } %>
 
-            <article>
-                <a class="a-homesecundario" href="/products/detail">
-                    <img src="/img/imagen_1.jpg" alt="Producto1">
-                </a>
-                <div>
-                    <p class="descr"><b>Nombre del producto</b></p>
-                    <p class="precios">$9999.99</p>
-                </div>
+                            <nav class="cambiopagina">
+                                <p><a href="#">Anterior</a> | <a href="#">Siguiente</a></p>
+                            </nav>
+                            <% } else { %>
+                                <h1>No hay productos cargados en la Web</h1>
+                                <% } %>
 
-            </article>
-
-            <article>
-                <a class="a-homesecundario" href="/products/detail">
-                    <img src="/img/imagen_1.jpg" alt="Producto1">
-                </a>
-                <div>
-                    <p class="descr"><b>Nombre del producto</b></p>
-                    <p class="precios">$9999.99</p>
-                </div>
-
-            </article>
-
-            <article>
-                <a class="a-homesecundario" href="/products/detail">
-                    <img src="/img/imagen_1.jpg" alt="Producto1">
-                </a>
-                <div>
-                    <p class="descr"><b>Nombre del producto</b></p>
-                    <p class="precios">$9999.99</p>
-                </div>
-
-            </article>
-
-            <nav class="cambiopagina">
-                <p><a href="#">Anterior</a> | <a href="#">Siguiente</a></p>
-            </nav>
-
-        </section>
-    </main>
-    <%- include("../partials/footer.ejs") %>
+            </section>
+        </main>
+        <%- include("../partials/footer.ejs") %>
 </body>
 
 </html>
