@@ -1,5 +1,17 @@
-[{
+[
+  {
     "id": 1,
+    "nombre": "",
+    "categoria": "1",
+    "precio": "",
+    "img": "",
+    "descripcion": "",
+    "stock": "",
+    "talle": "",
+    "color": ""
+  },
+  {
+    "id": 2,
     "nombre": "",
     "categoria": "",
     "precio": null,
@@ -8,4 +20,16 @@
     "stock": null,
     "talle": "",
     "color": ""
-}]
+  },
+  {
+    "id": 3,
+    "nombre": "",
+    "categoria": "",
+    "precio": null,
+    "img": "",
+    "descripcion": "",
+    "stock": null,
+    "talle": "",
+    "color": ""
+  }
+]

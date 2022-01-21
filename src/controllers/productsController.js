@@ -17,6 +17,14 @@ const controller = {
 
         let result = product.guardar(req.body)
         return res.send(result)
+    },
+
+    editar: (req, res) => {
+        product.modificar(req, res);
+
+        let urlARedireccionar = '/products/detail/' + req.params.id;
+
+        //res.redirect(urlARedireccionar);
     }
 }
 

@@ -16,12 +16,12 @@ app.set("view engine", "ejs");
 
 app.listen(app.get("port"), () => console.log("Servidor Corriendo"));
 
+
+app.use(express.static(path.resolve(__dirname, '..', 'public')))
+app.use(express.urlencoded({ extended: false }))
+app.use(method('_method'))
+
 //Direcciones
 app.use("/", rutaHome);
 app.use("/users", rutasUsers)
 app.use("/products", rutasProductos)
-
-
-app.use(express.static(path.resolve(__dirname, '..', 'public'))) 
-app.use(express.urlencoded({extended:true}))    
-app.use(method('m'))  

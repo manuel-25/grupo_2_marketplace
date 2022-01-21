@@ -10,9 +10,9 @@ router.get("/", products.lista);
 
 //router.post("/create", products.crearProducto);
 
-//router.put("/:id", products.editar)
+router.put('/:id', products.editar)
 
-//router.delete("/:id", products.borrar)
+//router.delete("/:id", products.borrar);
 
 //router.post('/guardar', products.guardarProducto)
 
