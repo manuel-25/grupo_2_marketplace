@@ -90,13 +90,19 @@
 
                         <input type="text" name="precio" class="campo">
                     </section>
-
-                    <section class="botones">
-                        <button type="submit" class="botonCancelar">Eliminar Producto</button>
-                        <button type="submit" class="botonConfirmar">Modificar Producto</button>
-                    </section>
-                </section>
             </form>
+            <section class="botones">
+
+                <!--Falta reemplazar en el action, el numero 1, por un EJS con la variable del producto.id -->
+                <!--Ahora siempre esta borrando al producto con ID 1 -->
+
+                <form method="post" action="/products/1?_method=DELETE">
+                    <button type="submit" class="botonCancelar">Eliminar Producto</button>
+                </form>
+                <button type="submit" class="botonConfirmar">Modificar Producto</button>
+            </section>
+            </section>
+
         </main>
         <%- include("../partials/footer.ejs") %>
 </body>

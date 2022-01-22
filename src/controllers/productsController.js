@@ -24,7 +24,14 @@ const controller = {
 
         let urlARedireccionar = '/products/detail/' + req.params.id;
 
-        //res.redirect(urlARedireccionar);
+        res.redirect(urlARedireccionar);
+    },
+
+    borrar: (req, res) => {
+
+        product.eliminar(req, res);
+        res.redirect('/products');
+
     }
 }
 

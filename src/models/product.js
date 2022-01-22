@@ -35,10 +35,24 @@ const model = {
         }
 
         fs.writeFileSync(path.resolve(__dirname, '..', 'data', 'products.json'), JSON.stringify(all, null, 2));
+    },
 
-        let urlARedireccionar = '/products/detail/' + req.params.id;
+    eliminar: (req, res) => {
+        let idProductoAEliminiar = req.params.id;
 
-        res.redirect(urlARedireccionar);
+        let all = model.listar();
+
+        let productos = [];
+
+        for (let i = 0; i < all.length; i++) {
+
+            if (all[i].id != idProductoAEliminiar) {
+                productos.push(all[i]);
+            }
+
+        }
+
+        fs.writeFileSync(path.resolve(__dirname, '..', 'data', 'products.json'), JSON.stringify(productos, null, 2));
 
     }
 }

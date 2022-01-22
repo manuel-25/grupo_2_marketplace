@@ -12,7 +12,7 @@ router.get("/", products.lista);
 
 router.put('/:id', products.editar)
 
-//router.delete("/:id", products.borrar);
+router.delete("/:id", products.borrar);
 
 //router.post('/guardar', products.guardarProducto)
 

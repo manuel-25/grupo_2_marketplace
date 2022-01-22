@@ -1,16 +1,5 @@
 [
   {
-    "id": 1,
-    "nombre": "",
-    "categoria": "1",
-    "precio": "",
-    "img": "",
-    "descripcion": "",
-    "stock": "",
-    "talle": "",
-    "color": ""
-  },
-  {
     "id": 2,
     "nombre": "",
     "categoria": "",
