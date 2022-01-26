@@ -1,22 +1,22 @@
 [
   {
-    "id": 2,
-    "nombre": "",
+    "id": 1,
+    "nombre": "Zapatilla",
     "categoria": "",
-    "precio": null,
+    "precio": 3000,
     "img": "",
-    "descripcion": "",
+    "descripcion": "Una zapatilla",
     "stock": null,
     "talle": "",
     "color": ""
   },
   {
-    "id": 3,
-    "nombre": "",
+    "id": 2,
+    "nombre": "Pantalón",
     "categoria": "",
-    "precio": null,
+    "precio": 2500,
     "img": "",
-    "descripcion": "",
+    "descripcion": "Un pantalon",
     "stock": null,
     "talle": "",
     "color": ""
