@@ -22,20 +22,17 @@
                 <h1>Modificar Producto</h1>
             </section>
 
-            <!--Falta reemplazar en el action, el numero 1, por un EJS con la variable del producto.id -->
-            <!--Ahora siempre esta editando al producto con ID 1 -->
-
-            <form method="POST" action="/products/1?_method=PUT">
+            <form method="POST" action="/products/<%= productoAModificar.id %>?_method=PUT">
                 <section class="superior">
                     <section class="izquierda">
 
                         <h2>Nombre</h2>
 
-                        <input type="text" name="nombre" class="campo">
+                        <input type="text" name="nombre" class="campo" value="<%= productoAModificar.nombre %> ">
 
                         <h2>Categoria</h2>
 
-                        <select name="categoria" class="campo">
+                        <select name="categoria" class="campo" value="<%= productoAModificar.categoria %>">
                 
                             <option value="1">Hombre</option>
                             <option value="2">Mujer</option>
@@ -46,7 +43,7 @@
 
                         <h2>Descripción</h2>
 
-                        <input type="text" name="descripcion" class="descr">
+                        <input type="text" name="descripcion" class="descr" value="<%= productoAModificar.descripcion %>">
 
                     </section>
 
@@ -58,7 +55,7 @@
                             </div>
                         </article>
 
-                        <img src="#" alt="ImagenProducto" class="imagen">
+                        <img src="<%= productoAModificar.img %>" alt="ImagenProducto" class="imagen">
 
                     </section>
 
@@ -66,19 +63,19 @@
                         <section>
                             <h2>Stock</h2>
 
-                            <input type="text" name="stock">
+                            <input type="text" name="stock" value="<%= productoAModificar.stock %>">
                         </section>
 
                         <section>
                             <h2>Talle</h2>
 
-                            <input type="text" name="talle">
+                            <input type="text" name="talle" value="<%= productoAModificar.talle %>">
                         </section>
 
                         <section>
                             <h2>Color</h2>
 
-                            <input type="text" name="color">
+                            <input type="text" name="color" value="<%= productoAModificar.color %>">
                         </section>
                     </section>
 
@@ -88,15 +85,11 @@
                     <section class="precio">
                         <h2>Precio</h2>
 
-                        <input type="text" name="precio" class="campo">
+                        <input type="text" name="precio" class="campo" value="<%= productoAModificar.precio %>">
                     </section>
             </form>
             <section class="botones">
-
-                <!--Falta reemplazar en el action, el numero 1, por un EJS con la variable del producto.id -->
-                <!--Ahora siempre esta borrando al producto con ID 1 -->
-
-                <form method="post" action="/products/1?_method=DELETE">
+                <form method="post" action="/products/<%= productoAModificar.id %>?_method=DELETE">
                     <button type="submit" class="botonCancelar">Eliminar Producto</button>
                 </form>
                 <button type="submit" class="botonConfirmar">Modificar Producto</button>

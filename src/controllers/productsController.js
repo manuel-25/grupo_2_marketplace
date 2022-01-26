@@ -11,22 +11,18 @@ const controller = {
 
     crearProducto: (req, res) => { res.render(path.resolve(__dirname, "..", "views", "products", "create")) },
 
-    modificarProducto: (req, res) => { res.render(path.resolve(__dirname, "..", "views", "products", "modify")) },
+    modificarProducto: (req, res) => { res.render(path.resolve(__dirname, "..", "views", "products", "modify"), { productoAModificar: product.mostrar(req.params.id) }) },
 
-    mostrarProducto: (req, res) => { 
-        let listaProductos = JSON.parse(fs.readFileSync(path.resolve(__dirname, "../data/products.json")))
-        if(listaProductos == undefined){
-            listaProductos = [];
-        } // Esto sirve que para cuando no hayan articulos para modificar, 
-          //lo manda directamente al segundo if y como es undefined se cumple el else
+    detalleProducto: (req, res) => {
 
-        let productoDeseado = listaProductos[req.params.id]
-        if(productoDeseado != undefined) {
-             res.render(path.resolve(__dirname, "../views/products/detail"),  {product: productoDeseado} )
-         }   else {
-             res.render(path.resolve(__dirname, "../views/products/detail"),  {product: productoDeseado} )
-         }
+        let productoDeseado = product.mostrar(req.params.id);
 
+        if (productoDeseado == undefined) {
+            productoDeseado = null
+            res.render(path.resolve(__dirname, "../views/products/detail"), { productoAMostrar: productoDeseado })
+        } else {
+            res.render(path.resolve(__dirname, "../views/products/detail"), { productoAMostrar: productoDeseado })
+        }
 
 
     },
@@ -34,8 +30,9 @@ const controller = {
     guardarProducto: (req, res) => {
         req.body.precio = parseFloat(req.body.precio)
 
-        let result = product.guardar(req.body)
-        return res.send(result)
+        product.guardar(req.body)
+
+        res.redirect('/products');
     },
 
     editar: (req, res) => {

@@ -2,23 +2,34 @@
   {
     "id": 1,
     "nombre": "Zapatilla",
-    "categoria": "",
-    "precio": 3000,
+    "categoria": "1",
+    "precio": "3000",
     "img": "",
     "descripcion": "Una zapatilla",
-    "stock": null,
-    "talle": "",
-    "color": ""
+    "stock": "10",
+    "talle": "42",
+    "color": "Blanco"
   },
   {
     "id": 2,
-    "nombre": "Pantalón",
-    "categoria": "",
-    "precio": 2500,
+    "nombre": "Pantalon",
+    "categoria": "1",
+    "precio": "4000",
     "img": "",
-    "descripcion": "Un pantalon",
-    "stock": null,
-    "talle": "",
-    "color": ""
+    "descripcion": "Una pantalon",
+    "stock": "20",
+    "talle": "40",
+    "color": "Negro"
+  },
+  {
+    "id": 3,
+    "nombre": "camisa",
+    "categoria": "1",
+    "descripcion": "descripcion de la camisa",
+    "img": "",
+    "stock": "5",
+    "talle": "30",
+    "color": "azul",
+    "precio": 2500
   }
 ]

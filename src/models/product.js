@@ -11,7 +11,6 @@ const model = {
         let product = { id: id, ...data }
         all.push(product)
         fs.writeFileSync(path.resolve(__dirname, '..', 'data', 'products.json'), JSON.stringify(all, null, 2))
-        return product
     },
     modificar: (req, res) => {
 

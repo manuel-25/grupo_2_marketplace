@@ -11,28 +11,28 @@
 
     <link rel="stylesheet" href="/css/productCreate.css">
     <%- include("../partials/head.ejs") %>
-    <title>Nuevo Producto</title>
+        <title>Nuevo Producto</title>
 </head>
 
 <body>
     <main>
-        <%- include("../partials/header.ejs") %> 
-        <section class="titulo">
-            <a href="/">Volver a Lexaeus</a>
-            <h1>Nuevo Producto</h1>
-        </section>
+        <%- include("../partials/header.ejs") %>
+            <section class="titulo">
+                <a href="/">Volver a Lexaeus</a>
+                <h1>Nuevo Producto</h1>
+            </section>
 
-        <form action="/products/save" method="post">
-            <section class="superior">
-                <section class="izquierda">
+            <form action="/products/create" method="post">
+                <section class="superior">
+                    <section class="izquierda">
 
-                    <h2>Nombre</h2>
+                        <h2>Nombre</h2>
 
-                    <input type="text" name="nombre" class="campo" required>
+                        <input type="text" name="nombre" class="campo" required>
 
-                    <h2>Categoria</h2>
+                        <h2>Categoria</h2>
 
-                    <select name="categoria" class="campo" required>
+                        <select name="categoria" class="campo" required>
                 
                     <option value="1">Hombre</option>
                     <option value="2">Mujer</option>
@@ -41,61 +41,61 @@
 
                 </select>
 
-                    <h2>Descripción</h2>
+                        <h2>Descripción</h2>
 
-                    <input type="text" name="descripcion" class="descr">
+                        <input type="text" name="descripcion" class="descr">
 
-                </section>
-
-                <section class="derecha">
-                    <article class="TituloBotonImagen">
-                        <h2>Imagen</h2>
-                        <div class="file-select" id="src-file1">
-                            <input type="file" name="img" aria-label="Archivo">
-                        </div>
-                    </article>
-
-                    <img src="#" alt="ImagenProducto" class="imagen">
-
-                </section>
-
-                <section class="detalles">
-                    <section>
-                        <h2>Stock</h2>
-
-                        <input type="text" name="stock" required>
                     </section>
 
-                    <section>
-                        <h2>Talle</h2>
+                    <section class="derecha">
+                        <article class="TituloBotonImagen">
+                            <h2>Imagen</h2>
+                            <div class="file-select" id="src-file1">
+                                <input type="file" name="img" aria-label="Archivo">
+                            </div>
+                        </article>
 
-                        <input type="text" name="talle" required>
+                        <img src="#" alt="ImagenProducto" class="imagen">
+
                     </section>
 
-                    <section>
-                        <h2>Color</h2>
+                    <section class="detalles">
+                        <section>
+                            <h2>Stock</h2>
 
-                        <input type="text" name="color" required>
+                            <input type="text" name="stock" required>
+                        </section>
+
+                        <section>
+                            <h2>Talle</h2>
+
+                            <input type="text" name="talle" required>
+                        </section>
+
+                        <section>
+                            <h2>Color</h2>
+
+                            <input type="text" name="color" required>
+                        </section>
+                    </section>
+
+                </section>
+
+                <section class="inferior">
+                    <section class="precio">
+                        <h2>Precio</h2>
+
+                        <input type="text" name="precio" class="campo" required>
+                    </section>
+
+                    <section class="botones">
+                        <input type="reset" value="Cancelar" class="botonCancelar">
+                        <input type="submit" value="Cargar Producto" class="botonConfirmar">
                     </section>
                 </section>
-
-            </section>
-
-            <section class="inferior">
-                <section class="precio">
-                    <h2>Precio</h2>
-
-                    <input type="text" name="precio" class="campo" required>
-                </section>
-
-                <section class="botones">
-                    <input type="reset" value="Cancelar" class="botonCancelar">
-                    <input type="submit" value="Cargar Producto" class="botonConfirmar">
-                </section>
-            </section>
-        </form>
+            </form>
     </main>
-    <%- include("../partials/footer.ejs") %> 
+    <%- include("../partials/footer.ejs") %>
 </body>
 
 </html>

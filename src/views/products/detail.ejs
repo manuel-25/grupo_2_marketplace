@@ -3,37 +3,40 @@
 
 <head>
     <%- include("../partials/head.ejs") %>
-    
-    <link href="/css/producto.css" rel="stylesheet">
+
+        <link href="/css/producto.css" rel="stylesheet">
 </head>
 
 <body>
-    <%- include("../partials/header.ejs") %> 
-    <main>
+    <%- include("../partials/header.ejs") %>
+        <main>
 
-        <section>
+            <section>
 
-            
-            <% if (locals.product != undefined) { %>
 
-                <article class="secimag">
-                    <img src="/img/imagen_1.jpg" alt="Producto1" class="imagenprod">
-                </article>
+                <% if (productoAMostrar != null) { %>
 
-            <article class="detallescompra">
-                
-                  
-                    <section class="titulo">
-                        <p><%= product.nombre %> </p>
-                    </section>
+                    <article class="secimag">
+                        <img src="<%= productoAMostrar.img %>" alt="Producto1" class="imagenprod">
+                    </article>
 
-                    <section class="precio">
-                        <p><%= product.precio %>$</p>
-                    </section>
-    
-                    <section class="combos">
-                        <p class="txtdetallecompra">Talle</p>
-                        <select name="talle" class="comboestilo">
+                    <article class="detallescompra">
+
+
+                        <section class="titulo">
+                            <p>
+                                <%= productoAMostrar.nombre %>
+                            </p>
+                        </section>
+
+                        <section class="precio">
+                            <p>
+                                <%= productoAMostrar.precio %>$</p>
+                        </section>
+
+                        <section class="combos">
+                            <p class="txtdetallecompra">Talle</p>
+                            <select name="talle" class="comboestilo">
                     
                             <option value="1">Talle 1</option>
                             <option value="2">Talle 2</option>
@@ -47,11 +50,11 @@
                             <option value="10">Talle 10</option>
     
                         </select>
-                    </section>
-    
-                    <section class="combos">
-                        <p class="txtdetallecompra">Color</p>
-                        <select name="color" class="comboestilo">
+                        </section>
+
+                        <section class="combos">
+                            <p class="txtdetallecompra">Color</p>
+                            <select name="color" class="comboestilo">
                     
                             <option value="Blanco">Blanco</option>
                             <option value="Rojo">Rojo</option>
@@ -60,11 +63,11 @@
                             <option value="Azul">Azul</option>
     
                         </select>
-                    </section>
-    
-                    <section class="combos">
-                        <p class="txtdetallecompra">Cantidad</p>
-                        <select name="cantidad" class="comboestilo">
+                        </section>
+
+                        <section class="combos">
+                            <p class="txtdetallecompra">Cantidad</p>
+                            <select name="cantidad" class="comboestilo">
                     
                             <option value="1">1</option>
                             <option value="2">2</option>
@@ -73,50 +76,52 @@
                             <option value="5">5</option>
     
                         </select>
-                    </section>
-    
-                    <form class="frmbotoncarrito">
-                        <button type="button" class="boton"><a class="a-productdetail" href="/productCart">Agregar al Carrito</a></button>
-                    </form>
-    
-    
-                </article>
-    
+                        </section>
+
+                        <form class="frmbotoncarrito">
+                            <button type="button" class="boton"><a class="a-productdetail" href="/productCart">Agregar al Carrito</a></button>
+                        </form>
+
+
+                    </article>
+
             </section>
-    
+
             <h3>Descripcion</h3>
-    
-            <p class="descripcion"><%= product.descripcion %></p>
 
-                <% } else {%>
-                    <section class="titulo">
-                        <p>Error, producto no encontrado</p>
+            <p class="descripcion">
+                <%= productoAMostrar.descripcion %>
+            </p>
+
+            <% } else {%>
+                <section class="titulo">
+                    <p>Error, producto no encontrado</p>
+                </section>
+
+                <% } %>
+
+
+                    <h2>Te puede Interesar</h2>
+
+                    <section class="tepuedeinteresar">
+                        <article>
+                            <img src="/img/imagen_2.jpg" alt="Producto2" class="artimg">
+                            <p class="arttxt">$9999.99</p>
+                        </article>
+
+                        <article>
+                            <img src="/img/imagen_3.jpg" alt="Producto3" class="artimg">
+                            <p class="arttxt">$9999.99</p>
+                        </article>
+
+                        <article>
+                            <img src="/img/imagen_4.jpg" alt="Producto4" class="artimg">
+                            <p class="arttxt">$9999.99</p>
+                        </article>
                     </section>
-    
-                    <% } %> 
-                
 
-        <h2>Te puede Interesar</h2>
-
-        <section class="tepuedeinteresar">
-            <article>
-                <img src="/img/imagen_2.jpg" alt="Producto2" class="artimg">
-                <p class="arttxt">$9999.99</p>
-            </article>
-
-            <article>
-                <img src="/img/imagen_3.jpg" alt="Producto3" class="artimg">
-                <p class="arttxt">$9999.99</p>
-            </article>
-
-            <article>
-                <img src="/img/imagen_4.jpg" alt="Producto4" class="artimg">
-                <p class="arttxt">$9999.99</p>
-            </article>
-        </section>
-
-    </main>
-    <%- include("../partials/footer.ejs") %>
+        </main>
+        <%- include("../partials/footer.ejs") %>
 </body>
 
 </html>
