@@ -15,10 +15,17 @@
                     Registrate
                 </h1>
                 <fieldset>
-                    <legend class="dn">Usuario</legend>
-                    <label class="dn" for="usuario">Nombre de Usuario</label>
-                    <input type="text" name="usuario" id="usuario" placeholder="Nombre de Usuario" required>
+                    <legend class="dn"></legend>
+                    <label class="dn" for="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
                 </fieldset>
+
+                <fieldset>
+                    <legend class="dn"></legend>
+                    <label class="dn" for="apellido">Apellido</label>
+                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                </fieldset>
+        
         
                 <fieldset>
                     <legend class="dn">Email</legend>
@@ -36,6 +43,14 @@
                     <legend class="dn">Confirmar Contraseña</legend>
                     <label class="dn" for="confirmar">Confirmar Contraseña</label>
                     <input type="password" name="confirmar" id="confirmar" placeholder="Confirmar Contraseña"required>
+                </fieldset>
+
+                <fieldset class="category">
+                            <legend for="categoria">Categoria</legend>
+                            <input type="checkbox" name="comprador" id="comprador">
+                            <label class="comprador" for="comprador">Comprador</label><br>
+                            <input type="checkbox" name="vendedor" id="vendedor">
+                            <label class="vendedor" for="vendedor">Vendedor</label><br>
                 </fieldset>
         
                 <fieldset class="login-buttons">

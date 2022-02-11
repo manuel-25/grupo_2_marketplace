@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../partials/head.ejs") %>
+    
+    <!-- Hoja de estilos del perfil -->
+    <link rel="stylesheet" href="/css/profile.css">
+
+</head>
+<body>
+
+    <%- include("../partials/header.ejs") %>
+<main>
+    <section>
+        <ul>
+            <li class="profile-img"><img src="/img/users/default-img.jpg" alt=""></li>
+            <li class="change-icon"><a href=""><i class="fa-solid fa-pen-to-square"></i> Cambiar foto de perfil</a></li>
+            <li>
+                <ul class="profile-data">
+                    <li>Nombre: Nombre</li>
+                    <li>Apellido: Apellido</li>  
+                    <li>Email: prueba@gmail.com</li>
+                    <li>Fecha de Nacimiento: 29/03/1996</li>
+                    <li>Categoria: Comprador</li>
+                </ul>
+            </li>
+        </ul>
+    </section>
+
+
+</main>
+<%- include("../partials/footer.ejs") %>
+</body>
