@@ -18,7 +18,7 @@ main{
 }
 
 .login-form{
-    max-width: 400px;
+    max-width: 500px;
     background-color: #457B9D;
     padding: 1rem;
     margin: 1rem;
@@ -42,7 +42,7 @@ main{
 }
 
 .login-form fieldset input{
-    width: 50vw;
+    width: 60vw;
     max-width: 300px;
     padding: .5rem;
     border-radius: 6px;
@@ -121,16 +121,16 @@ main .category legend{
 
 
 main .category input {
+    max-width: 6vw;
     margin-top: 5px;
     width: 4vw;
     display: inline-flex;
-    flex-direction: column;
     justify-content: center;
 }
 
 main .category .comprador, .vendedor{
     font-weight: normal;
-    padding-right: 25px;
+    padding-right: 6px;
     font-size: 18px;
 }
 
