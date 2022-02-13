@@ -6,6 +6,8 @@ router.get("/login", users.login);
 
 router.get("/register", users.register);
 
-router.get("/profile", users.profile)
+router.get("/profile/:idPerfil", users.profile);
+
+router.post('/register', users.crearUsuario);
 
 module.exports = router;

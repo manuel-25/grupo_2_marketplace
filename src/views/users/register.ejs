@@ -1,66 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <%- include("../partials/head.ejs") %>
 
-    <link href="/css/register.css" rel="stylesheet">
+        <link href="/css/register.css" rel="stylesheet">
 
 </head>
+
 <body>
-    <%- include("../partials/header.ejs") %> 
-    <main>
-        <section class="login-container">
-            <form class="login-form" action="/" method="post">
-                <h1>
-                    Registrate
-                </h1>
-                <fieldset>
-                    <legend class="dn"></legend>
-                    <label class="dn" for="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
-                </fieldset>
+    <%- include("../partials/header.ejs") %>
+        <main>
+            <section class="login-container">
+                <form class="login-form" action="/users/register" method="post">
+                    <h1>
+                        Registrate
+                    </h1>
+                    <fieldset>
+                        <legend class="dn"></legend>
+                        <label class="dn" for="nombre">Nombre</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Nombre" required>
+                    </fieldset>
 
-                <fieldset>
-                    <legend class="dn"></legend>
-                    <label class="dn" for="apellido">Apellido</label>
-                    <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
-                </fieldset>
-        
-        
-                <fieldset>
-                    <legend class="dn">Email</legend>
-                    <label class="dn" for="clave">Email</label>
-                    <input type="email" name="clave" id="email" placeholder="Direccion de Correo Electronico"required>
-                </fieldset>
+                    <fieldset>
+                        <legend class="dn"></legend>
+                        <label class="dn" for="apellido">Apellido</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Apellido" required>
+                    </fieldset>
 
-                <fieldset>
-                    <legend class="dn">Contraseña</legend>
-                    <label class="dn" for="clave">Contraseña</label>
-                    <input type="password" name="clave" id="clave" placeholder="Contraseña" required>
-                </fieldset>
-        
-                <fieldset>
-                    <legend class="dn">Confirmar Contraseña</legend>
-                    <label class="dn" for="confirmar">Confirmar Contraseña</label>
-                    <input type="password" name="confirmar" id="confirmar" placeholder="Confirmar Contraseña"required>
-                </fieldset>
 
-                <fieldset class="category">
-                            <legend for="categoria">Categoria</legend>
-                            <input type="checkbox" name="comprador" id="comprador">
-                            <label class="comprador" for="comprador">Comprador</label><br>
-                            <input type="checkbox" name="vendedor" id="vendedor">
-                            <label class="vendedor" for="vendedor">Vendedor</label><br>
-                </fieldset>
-        
-                <fieldset class="login-buttons">
-                    <legend class="dn">Botones del Formulario</legend>
-                    <button class="login-button" type="submit">Registrarse</button>
-                    <button class="register-button" type="submit"><a class="a-register" href="/">Volver al inicio</a> </button>
-                </fieldset>
-            </form>
-        </section>
-    </main>
-    <%- include("../partials/footer.ejs") %>
+                    <fieldset>
+                        <legend class="dn">Email</legend>
+                        <label class="dn" for="clave">Email</label>
+                        <input type="email" name="email" id="email" placeholder="Direccion de Correo Electronico" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend class="dn">Contraseña</legend>
+                        <label class="dn" for="clave">Contraseña</label>
+                        <input type="password" name="clave" id="clave" placeholder="Contraseña" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend class="dn">Confirmar Contraseña</legend>
+                        <label class="dn" for="confirmar">Confirmar Contraseña</label>
+                        <input type="password" name="confirmar" id="confirmar" placeholder="Confirmar Contraseña" required>
+                    </fieldset>
+
+                    <fieldset class="category">
+                        <legend for="categoria">Categoria</legend>
+                        <input type="checkbox" name="comprador" id="comprador">
+                        <label class="comprador" for="comprador">Comprador</label><br>
+                        <input type="checkbox" name="vendedor" id="vendedor">
+                        <label class="vendedor" for="vendedor">Vendedor</label><br>
+                    </fieldset>
+
+                    <fieldset class="login-buttons">
+                        <legend class="dn">Botones del Formulario</legend>
+                        <button class="login-button" type="submit">Registrarse</button>
+                        <button class="register-button" type="submit"><a class="a-register" href="/">Volver al inicio</a> </button>
+                    </fieldset>
+                </form>
+            </section>
+        </main>
+        <%- include("../partials/footer.ejs") %>
 </body>
+
 </html>
