@@ -19,6 +19,22 @@ const model = {
         let user = { id: id, nombre, apellido, email, password, image, esAdmin }
         all.push(user)
         fs.writeFileSync(path.resolve(__dirname, '..', 'data', 'users.json'), JSON.stringify(all, null, 2))
+    },
+    editar: (req, res) => {
+        let usuarioAEditar = model.mostrar(req.params.idPerfil);
+
+        usuarioAEditar.image = '/img/users/' + req.file.filename;
+
+        let all = model.listar()
+
+        for (let i = 0; i < all.length; i++) {
+            if (all[i].id == req.params.idPerfil) {
+                all[i] = usuarioAEditar;
+                console.log(usuarioAEditar)
+            }
+        }
+
+        fs.writeFileSync(path.resolve(__dirname, '..', 'data', 'users.json'), JSON.stringify(all, null, 2));
     }
 }
 

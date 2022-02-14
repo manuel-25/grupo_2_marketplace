@@ -13,32 +13,43 @@
 
     <%- include("../partials/header.ejs") %>
         <main>
-            <section>
-                <ul>
-                    <li class="profile-img"><img src="<%= usuarioAMostrar.image %>" alt=""></li>
-                    <li class="change-icon"><a href=""><i class="fa-solid fa-pen-to-square"></i> Cambiar foto de perfil</a></li>
-                    <li>
-                        <ul class="profile-data">
-                            <li>Nombre:
-                                <%= usuarioAMostrar.nombre %>
-                            </li>
-                            <li>Apellido:
-                                <%= usuarioAMostrar.apellido %>
-                            </li>
-                            <li>Email:
-                                <%= usuarioAMostrar.email %>
-                            </li>
-                            <% if ( usuarioAMostrar.esAdmin == true) { %>
-                                <li>Categoria: Vendedor</li>
-                                <% } else { %>
-                                    <li>Categoria: Comprador</li>
-                                    <% } %>
+            <form enctype="multipart/form-data" action="/users/profile/<%= usuarioAMostrar.id %>?_method=PUT" method="post">
+                <section class="informacion">
 
-                        </ul>
-                    </li>
-                </ul>
-            </section>
+                    <div class="secFotoPerfil">
+                        <img src="<%= usuarioAMostrar.image %>" alt="" class="profile-img">
+                        <div class="file-select" id="src-file1">
+                            <input type="file" name="imageProfile" aria-label="Archivo">
+                        </div>
+                    </div>
+                    <div class="secDatos">
 
+                        <article class="profile-data">
+                            <ul>
+                                <li>Nombre:
+                                    <%= usuarioAMostrar.nombre %>
+                                </li>
+                                <li>Apellido:
+                                    <%= usuarioAMostrar.apellido %>
+                                </li>
+                                <li>Email:
+                                    <%= usuarioAMostrar.email %>
+                                </li>
+                                <% if ( usuarioAMostrar.esAdmin == true) { %>
+                                    <li>Categoria: Vendedor</li>
+                                    <% } else { %>
+                                        <li>Categoria: Comprador</li>
+                                        <% } %>
+                            </ul>
+                        </article>
+
+
+                    </div>
+                </section>
+                <section class="secGuardar">
+                    <button type="submit" class="botonCambiar">Guardar</button>
+                </section>
+            </form>
 
         </main>
         <%- include("../partials/footer.ejs") %>

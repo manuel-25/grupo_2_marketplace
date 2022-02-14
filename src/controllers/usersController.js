@@ -14,7 +14,6 @@ const controller = {
     profile: (req, res) => {
         res.render(path.resolve(__dirname, "..", "views", "users", "profile"), { usuarioAMostrar: user.mostrar(req.params.idPerfil) })
     },
-
     crearUsuario: (req, res) => {
 
         if (req.body.clave == req.body.confirmar) {
@@ -33,6 +32,20 @@ const controller = {
             res.send('Las constraseñas no son iguales')
         }
 
+    },
+    actualizarPerfil: (req, res) => {
+
+        if (req.file == undefined) {
+
+            req.file.filename = "/img/users/default-img.jpg"
+
+        }
+
+        user.editar(req, res);
+
+        let urlARedireccionar = '/users/profile/' + req.params.idPerfil;
+
+        res.redirect(urlARedireccionar);
     }
 }
 
