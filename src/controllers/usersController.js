@@ -57,6 +57,8 @@ const controller = {
 
     validarLogin: (req, res) => {
 
+        
+
         let usuario = user.mostrarPorEmail(req.body.email);
 
         let errors = validationResult(req)
@@ -82,11 +84,14 @@ const controller = {
             res.render(path.resolve(__dirname, "..", "views", "users", "login"), { errors: errors.array() })
         }
 
-        // if(req.body.remember){
-        //     res.cookie("email", req.body.email, {maxAge: 1000*60*60})
-        // }
+        if(req.body.remember){
+            res.cookie("email", req.body.email, {maxAge: 1000*60*60})
+        }
 
-        // req.session.user = user.mostrarPorEmail(req.body.email)
+        req.session.user = user.mostrarPorEmail(req.body.email)
+
+        return req.session.user
+
 
 
     }
