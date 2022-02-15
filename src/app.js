@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const method = require('method-override')
 const path = require("path");
+const session = require('express-session');
 
 
 //Modulos requeridos
@@ -16,7 +17,11 @@ app.set("view engine", "ejs");
 
 app.listen(app.get("port"), () => console.log("Servidor Corriendo"));
 
-
+app.use(session({
+    secret: "secreto",
+    resave: false,
+    saveUninitialized: false
+}));
 app.use(express.static(path.resolve(__dirname, '..', 'public')))
 app.use(express.urlencoded({ extended: false }))
 app.use(method('_method'))

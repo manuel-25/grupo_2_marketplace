@@ -1,49 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <%- include("../partials/head.ejs") %>
-    
-    <link href="/css/login.css" rel="stylesheet">
+
+        <link href="/css/login.css" rel="stylesheet">
 
 </head>
-<body>
-    <%- include("../partials/header.ejs") %> 
-    <main>
-        <section class="login-container">
-            <form class="login-form" action="/" method="post">
-                <h1>
-                    Iniciar sesión
-                </h1>
-                <fieldset>
-                    <legend class="dn">Email</legend>
-                    <label class="dn" for="email">Email</label>
-                    <input type="text" name="email" id="email" placeholder="Dirección de correo electronico" required>
-                </fieldset>
-        
-                <fieldset>
-                    <legend class="dn">Contraseña</legend>
-                    <label class="dn" for="clave">Contraseña</label>
-                    <input type="password" name="clave" id="clave" placeholder="Contraseña"required>
-                </fieldset>
 
-                <fieldset class="remember">
-                    <legend class="dn">Recuerdame</legend>
-                    <input class="i-remember" type="checkbox" name="remember" id="remember">
-                    <label class="l-remember"  for="remember">Recordame</label>
-                </fieldset>
-        
-                <fieldset class="login-buttons">
-                    <legend class="dn">Botones del Formulario</legend>
-                    <button class="login-button" type="submit">Iniciar Sesion</button>
-                    <button class="register-button" type="reset"><a class="a-login" href="/users/register">Crear una Cuenta</a></button>
-                </fieldset>
-            </form>
-        </section>
-        <section class="login-bottom">
-            <p>Olvidaste tu Contraseña?</p>
-            <a href="#">Recuperar Contraseña</a>
-        </section>
-    </main>
-    <%- include("../partials/footer.ejs") %>
+<body>
+    <%- include("../partials/header.ejs") %>
+        <main>
+            <section class="login-container">
+                <form class="login-form" action="/users/login" method="post">
+                    <h1>
+                        Iniciar sesión
+                    </h1>
+                    <fieldset>
+                        <legend class="dn">Email</legend>
+                        <label class="dn" for="email">Email</label>
+                        <input type="text" name="email" id="email" placeholder="Dirección de correo electronico">
+                    </fieldset>
+
+                    <% if (locals.erroremail && erroremail.email) { %>
+                        <p class="mensaje-error">
+                            *
+                            <%= erroremail.email.msg %>
+                        </p>
+                        <% } %>
+
+
+                            <fieldset>
+                                <legend class="dn">Contraseña</legend>
+                                <label class="dn" for="clave">Contraseña</label>
+                                <input type="password" name="clave" id="clave" placeholder="Contraseña">
+                            </fieldset>
+
+                            <% if (locals.errorclave && errorclave.clave) { %>
+                                <p class="mensaje-error">
+                                    *
+                                    <%= errorclave.clave.msg %>
+                                </p>
+                                <% } %>
+
+                                    <fieldset class="remember">
+                                        <legend class="dn">Recuerdame</legend>
+                                        <input class="i-remember" type="checkbox" name="remember" id="remember">
+                                        <label class="l-remember" for="remember">Recordame</label>
+                                    </fieldset>
+
+                                    <% if (locals.errors) { errors.forEach( error => { %>
+                                        <p class="mensaje-error">
+                                            *
+                                            <%= error.msg %>
+                                        </p>
+                                        <% }) }%>
+
+
+                                            <fieldset class="login-buttons">
+                                                <legend class="dn">Botones del Formulario</legend>
+                                                <button class="login-button" type="submit">Iniciar Sesion</button>
+                                                <button class="register-button" type="reset"><a class="a-login" href="/users/register">Crear una Cuenta</a></button>
+                                            </fieldset>
+                </form>
+            </section>
+            <section class="login-bottom">
+                <p>Olvidaste tu Contraseña?</p>
+                <a href="#">Recuperar Contraseña</a>
+            </section>
+        </main>
+        <%- include("../partials/footer.ejs") %>
 </body>
+
 </html>
