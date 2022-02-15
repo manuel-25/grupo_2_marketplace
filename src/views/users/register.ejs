@@ -32,8 +32,12 @@
                     <fieldset>
                         <legend class="dn">Email</legend>
                         <label class="dn" for="clave">Email</label>
-                        <input type="email" name="email" id="email" placeholder="Direccion de Correo Electronico" required>
+                        <input type="text" name="email" id="email" placeholder="Direccion de Correo Electronico" required>
                     </fieldset>
+
+                    <% if (locals.errors && errors.email) { %>
+                        <h5>*<%= errors.email.msg %> </h5>
+                    <% } %>
 
                     <fieldset>
                         <legend class="dn">Contraseña</legend>
@@ -41,10 +45,19 @@
                         <input type="password" name="clave" id="clave" placeholder="Contraseña" required>
                     </fieldset>
 
+                    <% if (locals.errors && errors.clave) { %>
+                        <h5>*<%= errors.clave.msg %> </h5>
+                    <% } %>
+
                     <fieldset>
                         <legend class="dn">Confirmar Contraseña</legend>
                         <label class="dn" for="confirmar">Confirmar Contraseña</label>
                         <input type="password" name="confirmar" id="confirmar" placeholder="Confirmar Contraseña" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend class="img-profile">Inserte su imagen de perfil</legend>
+                        <input type="file" name="img-profile" id="img-profile">
                     </fieldset>
 
                     <fieldset class="category">

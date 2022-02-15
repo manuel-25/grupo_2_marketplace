@@ -1,6 +1,7 @@
 const path = require('path')
 const fs = require('fs') //Leer y escribir archivo .json
 const res = require('express/lib/response')
+const validator = require('express-validator');
 
 const model = {
     listar: () => JSON.parse(fs.readFileSync(path.resolve(__dirname, '..', 'data', 'users.json'))),
@@ -35,7 +36,12 @@ const model = {
         }
 
         fs.writeFileSync(path.resolve(__dirname, '..', 'data', 'users.json'), JSON.stringify(all, null, 2));
-    }
+    },
+    validator: [
+        validator.body("email").isEmail().withMessage("Introduzca un mail valido."),
+        validator.body("clave").isLength({min:5}).withMessage("La contraseña debe ser mayor a 5 caracteres.")
+    ]
+
 }
 
 module.exports = model

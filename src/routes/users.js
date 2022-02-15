@@ -6,6 +6,7 @@ const multer = require('multer');
 const verificarLogueo = require('../middlewares/verificarLogueo');
 const comprobarNoLogueo = require('../middlewares/comprobarNoLogueo');
 const { body } = require('express-validator');
+const {validator} = require("../models/user")
 
 const validacionFormLogin = [
     body('email').notEmpty().withMessage('Ingresar email'),
@@ -29,14 +30,14 @@ const upload = multer({ storage })
 
 router.get("/login", verificarLogueo, users.login);
 
-router.post("/login", validacionFormLogin, users.validarLogin);
-
 router.get("/profile", comprobarNoLogueo, users.profile);
 
 router.put("/profile", upload.single('imageProfile'), users.actualizarPerfil);
 
 router.get("/register", verificarLogueo, users.register);
 
-router.post('/register', users.crearUsuario);
+router.post('/register', [validator] , users.crearUsuario);
+
+router.post("/login", validacionFormLogin, users.validarLogin);
 
 module.exports = router;

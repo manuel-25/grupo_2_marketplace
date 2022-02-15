@@ -134,5 +134,18 @@ main .category .comprador, .vendedor{
     font-size: 18px;
 }
 
+main h5 {
+    color: #FAF6ED;
+    font-size: 14px;
+    width: 200px;
+    font-weight: bold;
+}
+
+main .img-profile {
+    color: #FAF6ED;
+    font-weight: bold;
+    font-size: 18px;
+    padding-bottom: 20px;
+}
 
 }

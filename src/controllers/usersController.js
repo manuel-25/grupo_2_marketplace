@@ -3,6 +3,7 @@ const user = require('../models/user')
 const fs = require('fs');
 const bcrypt = require('bcryptjs')
 const { validationResult } = require('express-validator');
+const validator = require('express-validator');
 
 const controller = {
     login: (req, res) => {
@@ -16,6 +17,13 @@ const controller = {
         res.render(path.resolve(__dirname, "..", "views", "users", "profile"), { usuarioAMostrar: req.session.userLogged })
     },
     crearUsuario: (req, res) => {
+
+        let errors = validator.validationResult(req).mapped();
+
+        if (errors.length > 0) {
+
+           return res.render(path.resolve(__dirname, "..", "views", "users", "register"), {errors})
+        }
 
         if (req.body.clave == req.body.confirmar) {
 
@@ -73,6 +81,13 @@ const controller = {
         } else {
             res.render(path.resolve(__dirname, "..", "views", "users", "login"), { errors: errors.array() })
         }
+
+        if(req.body.remember){
+            res.cookie("email", req.body.email, {maxAge: 1000*60*60})
+        }
+
+        req.session.user = user.mostrarPorEmail(req.body.email)
+
 
     }
 }
