@@ -29,14 +29,3 @@ Nuestra audiencia serán los jovenes, adolescentes.
 ¿Cómo ajustaremos nuestra oferta a ese público?
 
 Nuestra oferta será de indumentaria de lujo siguiendo las tendencias en el mundo de la moda de los jovenes y adolescentes.
-
-Integrantes del grupo:
-
-Ignacio Montaldi, 23 años. Vivo actualmente en la provincia de Salta, en Argentina.
-
-Nicolas Alonso, 24 años. Vivo en Buenos Aires, soy estudiante de Licensiatura en Sistemas de Informacion en la UNLu.
-
-Manuel Otamendi, 22 años hincha de River. Estudio Sistemas en la UNLP. Tengo algo de experiencia previa programando con
-Pascal, Java, JS entre otros. 
-
-Jimmy Robelto, Apasionado por la tecnologia adentrandome en la programacion. Un poco tarde, pero con todas las ganas del mundo.
